@@ -21,7 +21,7 @@ setup(
     entry_points={
         'console_scripts': [
             'patrol_client = turtle_patrol.patrol_client:main',
-            'patrol_server = turtle_patrol.patrol_server:main',
+            'patrol_server = turtle_patrol.multi_patrol_server:main',
             'patrol_client_sol = turtle_patrol.patrol_client_sol:main',
             'patrol_server_sol = turtle_patrol.patrol_server_sol:main'
         ],

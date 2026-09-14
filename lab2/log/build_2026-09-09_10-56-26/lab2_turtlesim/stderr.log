@@ -1,0 +1,5 @@
+  File "/home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab2/install/lab2_turtlesim/lib/python3.10/site-packages/lab2_turtlesim/move_turtle.py", line 4
+    import geometry_msgs import Twist
+                         ^^^^^^
+SyntaxError: invalid syntax
+

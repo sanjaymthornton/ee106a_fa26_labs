@@ -1,0 +1,21 @@
+[18.096s] Invoking command in '/home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab2/src/lab2_turtlesim': PYTHONPATH=/home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab2/build/lab2_turtlesim/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab2/install/lab2_turtlesim/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/lab2_turtlesim build --build-base /home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab2/build/lab2_turtlesim/build install --record /home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab2/build/lab2_turtlesim/install.log --install-scripts $base/lib/lab2_turtlesim --single-version-externally-managed install_data
+[19.653s] running egg_info
+[19.655s] writing ../../build/lab2_turtlesim/lab2_turtlesim.egg-info/PKG-INFO
+[19.661s] writing dependency_links to ../../build/lab2_turtlesim/lab2_turtlesim.egg-info/dependency_links.txt
+[19.666s] writing entry points to ../../build/lab2_turtlesim/lab2_turtlesim.egg-info/entry_points.txt
+[19.674s] writing requirements to ../../build/lab2_turtlesim/lab2_turtlesim.egg-info/requires.txt
+[19.678s] writing top-level names to ../../build/lab2_turtlesim/lab2_turtlesim.egg-info/top_level.txt
+[19.694s] reading manifest file '../../build/lab2_turtlesim/lab2_turtlesim.egg-info/SOURCES.txt'
+[19.702s] writing manifest file '../../build/lab2_turtlesim/lab2_turtlesim.egg-info/SOURCES.txt'
+[19.706s] running build
+[19.706s] running build_py
+[19.711s] running install
+[19.713s] running install_lib
+[19.722s] running install_data
+[19.726s] running install_egg_info
+[19.735s] removing '/home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab2/install/lab2_turtlesim/lib/python3.10/site-packages/lab2_turtlesim-0.0.0-py3.10.egg-info' (and everything under it)
+[19.749s] Copying ../../build/lab2_turtlesim/lab2_turtlesim.egg-info to /home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab2/install/lab2_turtlesim/lib/python3.10/site-packages/lab2_turtlesim-0.0.0-py3.10.egg-info
+[19.802s] running install_scripts
+[19.881s] Installing turtle_controller script to /home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab2/install/lab2_turtlesim/lib/lab2_turtlesim
+[19.888s] writing list of installed files to '/home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab2/build/lab2_turtlesim/install.log'
+[19.974s] Invoked command in '/home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab2/src/lab2_turtlesim' returned '0': PYTHONPATH=/home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab2/build/lab2_turtlesim/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab2/install/lab2_turtlesim/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/lab2_turtlesim build --build-base /home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab2/build/lab2_turtlesim/build install --record /home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab2/build/lab2_turtlesim/install.log --install-scripts $base/lib/lab2_turtlesim --single-version-externally-managed install_data

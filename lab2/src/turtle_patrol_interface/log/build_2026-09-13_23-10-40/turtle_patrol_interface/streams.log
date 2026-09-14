@@ -1,0 +1,106 @@
+[0.104s] Invoking command in '/home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab2/src/turtle_patrol_interface/build/turtle_patrol_interface': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab2/install/turtle_patrol:/home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab2/install/lab2_turtlesim:/home/ff/ee106a/robot_workspaces/ur/install/ur7e_utils:/opt/ros/humble /usr/bin/cmake /home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab2/src/turtle_patrol_interface -DCMAKE_INSTALL_PREFIX=/home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab2/src/turtle_patrol_interface/install/turtle_patrol_interface
+[0.537s] -- The C compiler identification is GNU 11.4.0
+[0.940s] -- The CXX compiler identification is GNU 11.4.0
+[1.030s] -- Detecting C compiler ABI info
+[1.671s] -- Detecting C compiler ABI info - done
+[1.698s] -- Check for working C compiler: /usr/bin/cc - skipped
+[1.699s] -- Detecting C compile features
+[1.700s] -- Detecting C compile features - done
+[1.766s] -- Detecting CXX compiler ABI info
+[2.496s] -- Detecting CXX compiler ABI info - done
+[2.523s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[2.524s] -- Detecting CXX compile features
+[2.527s] -- Detecting CXX compile features - done
+[2.626s] -- Found ament_cmake: 1.3.14 (/opt/ros/humble/share/ament_cmake/cmake)
+[3.587s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[4.454s] -- Found geometry_msgs: 4.9.2 (/opt/ros/humble/share/geometry_msgs/cmake)
+[4.829s] -- Found rosidl_generator_c: 3.1.9 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[4.892s] -- Found rosidl_adapter: 3.1.9 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[4.972s] -- Found rosidl_generator_cpp: 3.1.9 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[5.118s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[5.249s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[5.466s] -- Found rosidl_default_generators: 1.2.1 (/opt/ros/humble/share/rosidl_default_generators/cmake)
+[7.241s] -- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)
+[10.634s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[11.856s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[11.998s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.10.12", minimum required is "3.6") 
+[12.026s] -- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)
+[12.261s] -- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.10.so (found suitable version "3.10.12", minimum required is "3.5") 
+[12.261s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[12.261s] -- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10
+[12.261s] -- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so
+[12.392s] -- Found PythonExtra: .so  
+[13.721s] -- Found ament_lint_auto: 0.12.15 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[14.740s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[14.743s] -- Configured cppcheck include dirs: $<BUILD_INTERFACE:/home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab2/src/turtle_patrol_interface/build/turtle_patrol_interface/rosidl_generator_c>;$<BUILD_INTERFACE:/home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab2/src/turtle_patrol_interface/build/turtle_patrol_interface/rosidl_typesupport_fastrtps_c>;$<BUILD_INTERFACE:/home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab2/src/turtle_patrol_interface/build/turtle_patrol_interface/rosidl_generator_cpp>;$<BUILD_INTERFACE:/home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab2/src/turtle_patrol_interface/build/turtle_patrol_interface/rosidl_typesupport_fastrtps_cpp>;$<BUILD_INTERFACE:/home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab2/src/turtle_patrol_interface/build/turtle_patrol_interface/rosidl_typesupport_introspection_c>;$<BUILD_INTERFACE:/home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab2/src/turtle_patrol_interface/build/turtle_patrol_interface/rosidl_typesupport_introspection_cpp>;/home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab2/src/turtle_patrol_interface/build/turtle_patrol_interface/rosidl_generator_c;/home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab2/src/turtle_patrol_interface/build/turtle_patrol_interface/rosidl_generator_py
+[14.743s] -- Configured cppcheck exclude dirs and/or files: 
+[14.796s] -- Added test 'flake8' to check Python code syntax and style conventions
+[14.883s] -- Added test 'lint_cmake' to check CMake code style
+[14.938s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[15.263s] -- Added test 'uncrustify' to check C / C++ code style
+[15.263s] -- Configured uncrustify additional arguments: 
+[15.324s] -- Added test 'xmllint' to check XML markup files
+[15.519s] -- Configuring done
+[17.248s] -- Generating done
+[17.534s] -- Build files have been written to: /home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab2/src/turtle_patrol_interface/build/turtle_patrol_interface
+[17.557s] Invoked command in '/home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab2/src/turtle_patrol_interface/build/turtle_patrol_interface' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab2/install/turtle_patrol:/home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab2/install/lab2_turtlesim:/home/ff/ee106a/robot_workspaces/ur/install/ur7e_utils:/opt/ros/humble /usr/bin/cmake /home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab2/src/turtle_patrol_interface -DCMAKE_INSTALL_PREFIX=/home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab2/src/turtle_patrol_interface/install/turtle_patrol_interface
+[17.572s] Invoking command in '/home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab2/src/turtle_patrol_interface/build/turtle_patrol_interface': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab2/install/turtle_patrol:/home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab2/install/lab2_turtlesim:/home/ff/ee106a/robot_workspaces/ur/install/ur7e_utils:/opt/ros/humble /usr/bin/cmake --build /home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab2/src/turtle_patrol_interface/build/turtle_patrol_interface -- -j24 -l24
+[18.009s] [  3%] [34m[1mGenerating C code for ROS interfaces[0m
+[18.153s] [  6%] [34m[1mGenerating Rust code for ROS interfaces[0m
+[18.163s] [  9%] [34m[1mGenerating C++ code for ROS interfaces[0m
+[18.259s] [  9%] Built target ament_cmake_python_copy_turtle_patrol_interface
+[19.422s] [  9%] Built target turtle_patrol_interface__rs
+[19.489s] [  9%] Built target turtle_patrol_interface__cpp
+[19.576s] [ 12%] [32mBuilding C object CMakeFiles/turtle_patrol_interface__rosidl_generator_c.dir/rosidl_generator_c/turtle_patrol_interface/srv/detail/patrol__functions.c.o[0m
+[19.721s] [ 15%] [34m[1mGenerating C++ type support for eProsima Fast-RTPS[0m
+[19.734s] [ 21%] [34m[1mGenerating C++ type support dispatch for ROS interfaces[0m
+[19.735s] [ 21%] [34m[1mGenerating C++ introspection for ROS interfaces[0m
+[20.054s] [ 25%] [32m[1mLinking C shared library libturtle_patrol_interface__rosidl_generator_c.so[0m
+[20.369s] [ 25%] Built target turtle_patrol_interface__rosidl_generator_c
+[20.533s] [ 31%] [34m[1mGenerating C type support for eProsima Fast-RTPS[0m
+[20.535s] [ 34%] [34m[1mGenerating C introspection for ROS interfaces[0m
+[20.536s] [ 34%] [34m[1mGenerating C type support dispatch for ROS interfaces[0m
+[20.565s] running egg_info
+[20.569s] creating turtle_patrol_interface.egg-info
+[20.571s] writing turtle_patrol_interface.egg-info/PKG-INFO
+[20.577s] writing dependency_links to turtle_patrol_interface.egg-info/dependency_links.txt
+[20.582s] writing top-level names to turtle_patrol_interface.egg-info/top_level.txt
+[20.587s] writing manifest file 'turtle_patrol_interface.egg-info/SOURCES.txt'
+[20.605s] reading manifest file 'turtle_patrol_interface.egg-info/SOURCES.txt'
+[20.609s] writing manifest file 'turtle_patrol_interface.egg-info/SOURCES.txt'
+[20.832s] [ 34%] Built target ament_cmake_python_build_turtle_patrol_interface_egg
+[20.938s] [ 37%] [32mBuilding CXX object CMakeFiles/turtle_patrol_interface__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/turtle_patrol_interface/srv/patrol__type_support.cpp.o[0m
+[21.095s] [ 43%] [32mBuilding CXX object CMakeFiles/turtle_patrol_interface__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/turtle_patrol_interface/srv/detail/patrol__type_support.cpp.o[0m
+[21.095s] [ 43%] [32mBuilding CXX object CMakeFiles/turtle_patrol_interface__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/turtle_patrol_interface/srv/detail/dds_fastrtps/patrol__type_support.cpp.o[0m
+[21.694s] [ 46%] [32mBuilding CXX object CMakeFiles/turtle_patrol_interface__rosidl_typesupport_c.dir/rosidl_typesupport_c/turtle_patrol_interface/srv/patrol__type_support.cpp.o[0m
+[21.810s] [ 50%] [32mBuilding C object CMakeFiles/turtle_patrol_interface__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/turtle_patrol_interface/srv/detail/patrol__type_support.c.o[0m
+[21.833s] [ 53%] [32mBuilding CXX object CMakeFiles/turtle_patrol_interface__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/turtle_patrol_interface/srv/detail/patrol__type_support_c.cpp.o[0m
+[21.967s] [ 59%] [32m[1mLinking CXX shared library libturtle_patrol_interface__rosidl_typesupport_c.so[0m
+[21.968s] [ 59%] [32m[1mLinking CXX shared library libturtle_patrol_interface__rosidl_typesupport_cpp.so[0m
+[22.183s] [ 62%] [32m[1mLinking C shared library libturtle_patrol_interface__rosidl_typesupport_introspection_c.so[0m
+[22.367s] [ 62%] Built target turtle_patrol_interface__rosidl_typesupport_c
+[22.376s] [ 62%] Built target turtle_patrol_interface__rosidl_typesupport_cpp
+[22.504s] [ 65%] [32m[1mLinking CXX shared library libturtle_patrol_interface__rosidl_typesupport_introspection_cpp.so[0m
+[22.522s] [ 65%] Built target turtle_patrol_interface__rosidl_typesupport_introspection_c
+[22.671s] [ 68%] [32m[1mLinking CXX shared library libturtle_patrol_interface__rosidl_typesupport_fastrtps_cpp.so[0m
+[22.862s] [ 68%] Built target turtle_patrol_interface__rosidl_typesupport_introspection_cpp
+[23.068s] [ 68%] Built target turtle_patrol_interface__rosidl_typesupport_fastrtps_cpp
+[23.181s] [ 71%] [32m[1mLinking CXX shared library libturtle_patrol_interface__rosidl_typesupport_fastrtps_c.so[0m
+[23.537s] [ 71%] Built target turtle_patrol_interface__rosidl_typesupport_fastrtps_c
+[23.713s] [ 71%] Built target turtle_patrol_interface
+[23.896s] [ 75%] [34m[1mGenerating Python code for ROS interfaces[0m
+[25.141s] [ 75%] Built target turtle_patrol_interface__py
+[25.333s] [ 78%] [32mBuilding C object CMakeFiles/turtle_patrol_interface__rosidl_generator_py.dir/rosidl_generator_py/turtle_patrol_interface/srv/_patrol_s.c.o[0m
+[25.897s] [ 81%] [32m[1mLinking C shared library rosidl_generator_py/turtle_patrol_interface/libturtle_patrol_interface__rosidl_generator_py.so[0m
+[26.177s] [ 81%] Built target turtle_patrol_interface__rosidl_generator_py
+[26.429s] [ 90%] [32mBuilding C object CMakeFiles/turtle_patrol_interface__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/turtle_patrol_interface/_turtle_patrol_interface_s.ep.rosidl_typesupport_introspection_c.c.o[0m
+[26.430s] [ 90%] [32mBuilding C object CMakeFiles/turtle_patrol_interface__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/turtle_patrol_interface/_turtle_patrol_interface_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[26.430s] [ 90%] [32mBuilding C object CMakeFiles/turtle_patrol_interface__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/turtle_patrol_interface/_turtle_patrol_interface_s.ep.rosidl_typesupport_c.c.o[0m
+[26.568s] gmake[2]: *** [CMakeFiles/turtle_patrol_interface__rosidl_typesupport_c__pyext.dir/build.make:76: CMakeFiles/turtle_patrol_interface__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/turtle_patrol_interface/_turtle_patrol_interface_s.ep.rosidl_typesupport_c.c.o] Interrupt
+[26.568s] gmake[2]: *** [CMakeFiles/turtle_patrol_interface__rosidl_typesupport_fastrtps_c__pyext.dir/build.make:76: CMakeFiles/turtle_patrol_interface__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/turtle_patrol_interface/_turtle_patrol_interface_s.ep.rosidl_typesupport_fastrtps_c.c.o] Interrupt
+[26.569s] gmake[2]: *** [CMakeFiles/turtle_patrol_interface__rosidl_typesupport_introspection_c__pyext.dir/build.make:76: CMakeFiles/turtle_patrol_interface__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/turtle_patrol_interface/_turtle_patrol_interface_s.ep.rosidl_typesupport_introspection_c.c.o] Interrupt
+[26.569s] gmake[1]: *** [CMakeFiles/Makefile2:583: CMakeFiles/turtle_patrol_interface__rosidl_typesupport_c__pyext.dir/all] Interrupt
+[26.569s] gmake[1]: *** [CMakeFiles/Makefile2:554: CMakeFiles/turtle_patrol_interface__rosidl_typesupport_introspection_c__pyext.dir/all] Interrupt
+[26.570s] gmake[1]: *** [CMakeFiles/Makefile2:524: CMakeFiles/turtle_patrol_interface__rosidl_typesupport_fastrtps_c__pyext.dir/all] Interrupt
+[26.570s] gmake: *** [Makefile:146: all] Interrupt
+[26.579s] Invoked command in '/home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab2/src/turtle_patrol_interface/build/turtle_patrol_interface' returned '-2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab2/install/turtle_patrol:/home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab2/install/lab2_turtlesim:/home/ff/ee106a/robot_workspaces/ur/install/ur7e_utils:/opt/ros/humble /usr/bin/cmake --build /home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab2/src/turtle_patrol_interface/build/turtle_patrol_interface -- -j24 -l24

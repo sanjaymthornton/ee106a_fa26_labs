@@ -1,0 +1,3 @@
+[console_scripts]
+turtle_controller = lab2_turtlesim.move_turtle:main
+
