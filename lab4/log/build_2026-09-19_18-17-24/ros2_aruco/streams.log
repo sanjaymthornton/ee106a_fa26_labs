@@ -1,0 +1,22 @@
+[0.758s] Invoking command in '/home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab4/src/ros2_aruco/ros2_aruco': PYTHONPATH=/home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab4/build/ros2_aruco/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab4/install/ros2_aruco/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../build/ros2_aruco build --build-base /home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab4/build/ros2_aruco/build install --record /home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab4/build/ros2_aruco/install.log --install-scripts $base/lib/ros2_aruco --single-version-externally-managed install_data
+[0.974s] running egg_info
+[0.975s] writing ../../../build/ros2_aruco/ros2_aruco.egg-info/PKG-INFO
+[0.978s] writing dependency_links to ../../../build/ros2_aruco/ros2_aruco.egg-info/dependency_links.txt
+[0.980s] writing entry points to ../../../build/ros2_aruco/ros2_aruco.egg-info/entry_points.txt
+[0.982s] writing requirements to ../../../build/ros2_aruco/ros2_aruco.egg-info/requires.txt
+[0.984s] writing top-level names to ../../../build/ros2_aruco/ros2_aruco.egg-info/top_level.txt
+[0.988s] reading manifest file '../../../build/ros2_aruco/ros2_aruco.egg-info/SOURCES.txt'
+[0.991s] writing manifest file '../../../build/ros2_aruco/ros2_aruco.egg-info/SOURCES.txt'
+[0.992s] running build
+[0.992s] running build_py
+[0.993s] running install
+[0.993s] running install_lib
+[0.995s] running install_data
+[0.996s] running install_egg_info
+[0.998s] removing '/home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab4/install/ros2_aruco/lib/python3.10/site-packages/ros2_aruco-0.1.0-py3.10.egg-info' (and everything under it)
+[1.008s] Copying ../../../build/ros2_aruco/ros2_aruco.egg-info to /home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab4/install/ros2_aruco/lib/python3.10/site-packages/ros2_aruco-0.1.0-py3.10.egg-info
+[1.042s] running install_scripts
+[1.059s] Installing aruco_generate_marker script to /home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab4/install/ros2_aruco/lib/ros2_aruco
+[1.062s] Installing aruco_node script to /home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab4/install/ros2_aruco/lib/ros2_aruco
+[1.065s] writing list of installed files to '/home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab4/build/ros2_aruco/install.log'
+[1.082s] Invoked command in '/home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab4/src/ros2_aruco/ros2_aruco' returned '0': PYTHONPATH=/home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab4/build/ros2_aruco/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab4/install/ros2_aruco/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../build/ros2_aruco build --build-base /home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab4/build/ros2_aruco/build install --record /home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab4/build/ros2_aruco/install.log --install-scripts $base/lib/ros2_aruco --single-version-externally-managed install_data

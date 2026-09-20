@@ -1,0 +1,25 @@
+[0.900s] Invoking command in '/home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab4/src/ros2_aruco/ros2_aruco': PYTHONPATH=/home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab4/build/ros2_aruco/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab4/install/ros2_aruco/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../build/ros2_aruco build --build-base /home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab4/build/ros2_aruco/build install --record /home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab4/build/ros2_aruco/install.log --install-scripts $base/lib/ros2_aruco --single-version-externally-managed install_data
+[0.963s] Traceback (most recent call last):
+[0.963s]   File "/home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab4/src/ros2_aruco/ros2_aruco/setup.py", line 1, in <module>
+[0.963s]     from setuptools import setup
+[0.963s]   File "/usr/lib/python3/dist-packages/setuptools/__init__.py", line 16, in <module>
+[0.964s]     import setuptools.version
+[0.964s]   File "/usr/lib/python3/dist-packages/setuptools/version.py", line 1, in <module>
+[0.964s]     import pkg_resources
+[0.964s]   File "/usr/lib/python3/dist-packages/pkg_resources/__init__.py", line 33, in <module>
+[0.964s]     import email.parser
+[0.964s]   File "/usr/lib/python3.10/email/parser.py", line 12, in <module>
+[0.964s]     from email.feedparser import FeedParser, BytesFeedParser
+[0.964s]   File "/usr/lib/python3.10/email/feedparser.py", line 27, in <module>
+[0.964s]     from email._policybase import compat32
+[0.964s]   File "/usr/lib/python3.10/email/_policybase.py", line 7, in <module>
+[0.965s]     from email import header
+[0.965s]   File "/usr/lib/python3.10/email/header.py", line 17, in <module>
+[0.965s]     import email.base64mime
+[0.965s]   File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+[0.966s]   File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+[0.966s]   File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+[0.966s]   File "<frozen importlib._bootstrap_external>", line 879, in exec_module
+[0.967s]   File "<frozen importlib._bootstrap_external>", line 975, in get_code
+[0.967s]   File "<frozen importlib._bootstrap_external>", line 1074, in get_data
+[0.967s] KeyboardInterrupt

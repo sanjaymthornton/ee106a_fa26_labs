@@ -1,0 +1,26 @@
+[0.300s] Invoking command in '/home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab4/build/ros2_aruco_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/turtlebot3_ws/install/turtlebot3_teleop:/opt/ros/turtlebot3_ws/install/turtlebot3_example:/opt/ros/humble /usr/bin/cmake --build /home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab4/build/ros2_aruco_interfaces -- -j32 -l32
+[0.481s] [  9%] Built target ros2_aruco_interfaces__cpp
+[0.481s] [  9%] Built target ros2_aruco_interfaces__rs
+[0.488s] [ 15%] Built target ros2_aruco_interfaces__rosidl_generator_c
+[0.544s] [ 15%] Built target ament_cmake_python_copy_ros2_aruco_interfaces
+[0.564s] [ 43%] Built target ros2_aruco_interfaces__rosidl_typesupport_cpp
+[0.564s] [ 43%] Built target ros2_aruco_interfaces__rosidl_typesupport_introspection_cpp
+[0.565s] [ 43%] Built target ros2_aruco_interfaces__rosidl_typesupport_fastrtps_cpp
+[0.585s] [ 62%] Built target ros2_aruco_interfaces__rosidl_typesupport_introspection_c
+[0.588s] [ 68%] Built target ros2_aruco_interfaces__rosidl_typesupport_fastrtps_c
+[0.591s] [ 71%] Built target ros2_aruco_interfaces__rosidl_typesupport_c
+[0.619s] [ 71%] Built target ros2_aruco_interfaces
+[0.653s] [ 75%] Built target ros2_aruco_interfaces__py
+[0.693s] [ 81%] Built target ros2_aruco_interfaces__rosidl_generator_py
+[0.749s] [100%] Built target ros2_aruco_interfaces__rosidl_typesupport_fastrtps_c__pyext
+[0.749s] [100%] Built target ros2_aruco_interfaces__rosidl_typesupport_c__pyext
+[0.749s] [100%] Built target ros2_aruco_interfaces__rosidl_typesupport_introspection_c__pyext
+[0.813s] running egg_info
+[0.814s] writing ros2_aruco_interfaces.egg-info/PKG-INFO
+[0.817s] writing dependency_links to ros2_aruco_interfaces.egg-info/dependency_links.txt
+[0.821s] writing top-level names to ros2_aruco_interfaces.egg-info/top_level.txt
+[0.829s] reading manifest file 'ros2_aruco_interfaces.egg-info/SOURCES.txt'
+[0.831s] writing manifest file 'ros2_aruco_interfaces.egg-info/SOURCES.txt'
+[0.877s] [100%] Built target ament_cmake_python_build_ros2_aruco_interfaces_egg
+[0.927s] Invoked command in '/home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab4/build/ros2_aruco_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/turtlebot3_ws/install/turtlebot3_teleop:/opt/ros/turtlebot3_ws/install/turtlebot3_example:/opt/ros/humble /usr/bin/cmake --build /home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab4/build/ros2_aruco_interfaces -- -j32 -l32
+[0.933s] Invoking command in '/home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab4/build/ros2_aruco_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/turtlebot3_ws/install/turtlebot3_teleop:/opt/ros/turtlebot3_ws/install/turtlebot3_example:/opt/ros/humble /usr/bin/cmake --install /home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab4/build/ros2_aruco_interfaces

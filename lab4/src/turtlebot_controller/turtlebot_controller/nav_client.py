@@ -45,7 +45,7 @@ class NavClient(Node):
 
         # TODO 1: build the action client. which action type, and what is the
         # server called? (ros2 action list)
-        self.client = None
+        self.client = ActionClient(self, NavigateToPose, 'navigate_to_pose')
 
     def spin_for(self, seconds):
         end = self.get_clock().now() + Duration(seconds=seconds)
@@ -79,7 +79,7 @@ class NavClient(Node):
         frame = f'ar_marker_{self.marker_id}'
         # TODO 2: look the tag up in self.goal_frame. one call -- tf composes the
         # whole chain from the map down to the marker for you.
-        tf = None
+        tf = self.tf_buffer.lookup_transform(self.goal_frame, frame, Time())
 
         # tf2 keeps handing back the last transform it saw. refuse a stale one.
         age = (self.get_clock().now() - Time.from_msg(tf.header.stamp)).nanoseconds / 1e9
@@ -97,7 +97,11 @@ class NavClient(Node):
 
         # TODO 3: return (goal_x, goal_y, goal_yaw) self.standoff metres short of the
         # tag, facing it. 
-        raise NotImplementedError
+        dist_x = tag_x - robot_x
+        dist_y = tag_y - robot_y
+        dir_tag = math.sqrt(dist_x**2 + dist_y**2)
+
+        return ((dist_x/dir_tag)*self.standoff, (dist_y/dir_tag)*self.standoff, math.atan2(dist_y, dist_x))
 
     def make_goal(self):
         x = self.get_parameter('x').value

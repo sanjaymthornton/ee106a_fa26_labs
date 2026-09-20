@@ -1,0 +1,47 @@
+[1.087s] Invoking command in '/home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab4/src/turtlebot_controller': AMENT_PREFIX_PATH=/home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab4/install/ros2_aruco:${AMENT_PREFIX_PATH} PYTHONPATH=/home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab4/build/turtlebot_controller/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab4/install/turtlebot_controller/lib/python3.10/site-packages:/home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab4/install/ros2_aruco/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/turtlebot_controller build --build-base /home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab4/build/turtlebot_controller/build install --record /home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab4/build/turtlebot_controller/install.log --install-scripts $base/lib/turtlebot_controller --single-version-externally-managed install_data
+[1.569s] running egg_info
+[1.569s] creating ../../build/turtlebot_controller/turtlebot_controller.egg-info
+[1.572s] writing ../../build/turtlebot_controller/turtlebot_controller.egg-info/PKG-INFO
+[1.578s] writing dependency_links to ../../build/turtlebot_controller/turtlebot_controller.egg-info/dependency_links.txt
+[1.581s] writing entry points to ../../build/turtlebot_controller/turtlebot_controller.egg-info/entry_points.txt
+[1.583s] writing requirements to ../../build/turtlebot_controller/turtlebot_controller.egg-info/requires.txt
+[1.586s] writing top-level names to ../../build/turtlebot_controller/turtlebot_controller.egg-info/top_level.txt
+[1.589s] writing manifest file '../../build/turtlebot_controller/turtlebot_controller.egg-info/SOURCES.txt'
+[1.595s] reading manifest file '../../build/turtlebot_controller/turtlebot_controller.egg-info/SOURCES.txt'
+[1.597s] writing manifest file '../../build/turtlebot_controller/turtlebot_controller.egg-info/SOURCES.txt'
+[1.598s] running build
+[1.598s] running build_py
+[1.600s] creating /home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab4/build/turtlebot_controller/build
+[1.601s] creating /home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab4/build/turtlebot_controller/build/lib
+[1.602s] creating /home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab4/build/turtlebot_controller/build/lib/turtlebot_controller
+[1.604s] copying turtlebot_controller/nav_client.py -> /home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab4/build/turtlebot_controller/build/lib/turtlebot_controller
+[1.610s] copying turtlebot_controller/square_drive.py -> /home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab4/build/turtlebot_controller/build/lib/turtlebot_controller
+[1.615s] copying turtlebot_controller/__init__.py -> /home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab4/build/turtlebot_controller/build/lib/turtlebot_controller
+[1.618s] running install
+[1.619s] running install_lib
+[1.622s] creating /home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab4/install/turtlebot_controller/lib/python3.10/site-packages/turtlebot_controller
+[1.624s] copying /home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab4/build/turtlebot_controller/build/lib/turtlebot_controller/__init__.py -> /home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab4/install/turtlebot_controller/lib/python3.10/site-packages/turtlebot_controller
+[1.627s] copying /home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab4/build/turtlebot_controller/build/lib/turtlebot_controller/nav_client.py -> /home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab4/install/turtlebot_controller/lib/python3.10/site-packages/turtlebot_controller
+[1.632s] copying /home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab4/build/turtlebot_controller/build/lib/turtlebot_controller/square_drive.py -> /home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab4/install/turtlebot_controller/lib/python3.10/site-packages/turtlebot_controller
+[1.641s] byte-compiling /home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab4/install/turtlebot_controller/lib/python3.10/site-packages/turtlebot_controller/__init__.py to __init__.cpython-310.pyc
+[1.648s] byte-compiling /home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab4/install/turtlebot_controller/lib/python3.10/site-packages/turtlebot_controller/nav_client.py to nav_client.cpython-310.pyc
+[1.656s] byte-compiling /home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab4/install/turtlebot_controller/lib/python3.10/site-packages/turtlebot_controller/square_drive.py to square_drive.cpython-310.pyc
+[1.658s] running install_data
+[1.658s] Sorry: IndentationError: expected an indented block after 'try' statement on line 94 (square_drive.py, line 96)
+[1.658s] creating /home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab4/install/turtlebot_controller/share/ament_index
+[1.660s] creating /home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab4/install/turtlebot_controller/share/ament_index/resource_index
+[1.662s] creating /home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab4/install/turtlebot_controller/share/ament_index/resource_index/packages
+[1.664s] copying resource/turtlebot_controller -> /home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab4/install/turtlebot_controller/share/ament_index/resource_index/packages
+[1.668s] copying package.xml -> /home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab4/install/turtlebot_controller/share/turtlebot_controller
+[1.673s] creating /home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab4/install/turtlebot_controller/share/turtlebot_controller/launch
+[1.674s] copying launch/slam_launch.py -> /home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab4/install/turtlebot_controller/share/turtlebot_controller/launch
+[1.680s] copying launch/tag_launch.py -> /home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab4/install/turtlebot_controller/share/turtlebot_controller/launch
+[1.685s] creating /home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab4/install/turtlebot_controller/share/turtlebot_controller/rviz
+[1.687s] copying rviz/slam.rviz -> /home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab4/install/turtlebot_controller/share/turtlebot_controller/rviz
+[1.693s] running install_egg_info
+[1.698s] Copying ../../build/turtlebot_controller/turtlebot_controller.egg-info to /home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab4/install/turtlebot_controller/lib/python3.10/site-packages/turtlebot_controller-0.0.0-py3.10.egg-info
+[1.736s] running install_scripts
+[1.800s] Installing nav_client script to /home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab4/install/turtlebot_controller/lib/turtlebot_controller
+[1.805s] Installing square_drive script to /home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab4/install/turtlebot_controller/lib/turtlebot_controller
+[1.809s] writing list of installed files to '/home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab4/build/turtlebot_controller/install.log'
+[1.826s] Invoked command in '/home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab4/src/turtlebot_controller' returned '0': AMENT_PREFIX_PATH=/home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab4/install/ros2_aruco:${AMENT_PREFIX_PATH} PYTHONPATH=/home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab4/build/turtlebot_controller/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab4/install/turtlebot_controller/lib/python3.10/site-packages:/home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab4/install/ros2_aruco/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/turtlebot_controller build --build-base /home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab4/build/turtlebot_controller/build install --record /home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab4/build/turtlebot_controller/install.log --install-scripts $base/lib/turtlebot_controller --single-version-externally-managed install_data
