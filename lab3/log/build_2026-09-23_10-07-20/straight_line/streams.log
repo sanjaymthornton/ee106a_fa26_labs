@@ -1,0 +1,28 @@
+[0.675s] Invoking command in '/home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab3/src/straight_line': PYTHONPATH=/home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab3/build/straight_line/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab3/install/straight_line/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/straight_line build --build-base /home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab3/build/straight_line/build install --record /home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab3/build/straight_line/install.log --install-scripts $base/lib/straight_line --single-version-externally-managed install_data
+[0.904s] running egg_info
+[0.905s] writing ../../build/straight_line/straight_line.egg-info/PKG-INFO
+[0.907s] writing dependency_links to ../../build/straight_line/straight_line.egg-info/dependency_links.txt
+[0.910s] writing entry points to ../../build/straight_line/straight_line.egg-info/entry_points.txt
+[0.912s] writing requirements to ../../build/straight_line/straight_line.egg-info/requires.txt
+[0.914s] writing top-level names to ../../build/straight_line/straight_line.egg-info/top_level.txt
+[0.919s] reading manifest file '../../build/straight_line/straight_line.egg-info/SOURCES.txt'
+[0.921s] adding license file 'LICENSE'
+[0.921s] writing manifest file '../../build/straight_line/straight_line.egg-info/SOURCES.txt'
+[0.923s] running build
+[0.924s] running build_py
+[0.925s] running install
+[0.926s] running install_lib
+[0.928s] byte-compiling /home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab3/install/straight_line/lib/python3.10/site-packages/straight_line/straight_line_server.py to straight_line_server.cpython-310.pyc
+[0.928s]   File "/home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab3/install/straight_line/lib/python3.10/site-packages/straight_line/straight_line_server.py", line 48
+[0.928s]     'move_straight',
+[0.928s]     ^^^^^^^^^^^^^^^
+[0.928s] SyntaxError: invalid syntax
+[0.928s] 
+[0.929s] running install_data
+[0.930s] running install_egg_info
+[0.932s] removing '/home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab3/install/straight_line/lib/python3.10/site-packages/straight_line-0.0.0-py3.10.egg-info' (and everything under it)
+[0.942s] Copying ../../build/straight_line/straight_line.egg-info to /home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab3/install/straight_line/lib/python3.10/site-packages/straight_line-0.0.0-py3.10.egg-info
+[0.976s] running install_scripts
+[0.995s] Installing straight_line_server script to /home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab3/install/straight_line/lib/straight_line
+[0.998s] writing list of installed files to '/home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab3/build/straight_line/install.log'
+[1.014s] Invoked command in '/home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab3/src/straight_line' returned '0': PYTHONPATH=/home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab3/build/straight_line/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab3/install/straight_line/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/straight_line build --build-base /home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab3/build/straight_line/build install --record /home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab3/build/straight_line/install.log --install-scripts $base/lib/straight_line --single-version-externally-managed install_data

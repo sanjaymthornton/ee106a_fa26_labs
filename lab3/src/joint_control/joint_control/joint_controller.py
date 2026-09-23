@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 
+import numpy as np
 import sys
 
 import rclpy
@@ -31,9 +32,16 @@ class JointController(Node):
         self.publish_trajectory()
 
     def publish_trajectory(self):
-        # YOUR CODE HERE
-        pass
+        msg = JointTrajectory()
+        pts = JointTrajectoryPoint()
 
+        pts = self.joint_angles
+        msg.points = pts 
+
+        pts.velocities = np.zeros(6)
+        pts.time_from_start = 5
+
+        self.publisher.publish(msg, "/joint_trajectory_validated", 10)
 
 def main(args=None):
     if len(sys.argv) != 7:

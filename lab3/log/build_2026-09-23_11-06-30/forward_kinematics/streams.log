@@ -1,0 +1,20 @@
+[1.379s] Invoking command in '/home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab3/src/forward_kinematics': PYTHONPATH=/home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab3/build/forward_kinematics/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab3/install/forward_kinematics/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/forward_kinematics build --build-base /home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab3/build/forward_kinematics/build install --record /home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab3/build/forward_kinematics/install.log --install-scripts $base/lib/forward_kinematics --single-version-externally-managed install_data
+[1.589s] running egg_info
+[1.590s] writing ../../build/forward_kinematics/forward_kinematics.egg-info/PKG-INFO
+[1.594s] writing dependency_links to ../../build/forward_kinematics/forward_kinematics.egg-info/dependency_links.txt
+[1.597s] writing entry points to ../../build/forward_kinematics/forward_kinematics.egg-info/entry_points.txt
+[1.599s] writing requirements to ../../build/forward_kinematics/forward_kinematics.egg-info/requires.txt
+[1.602s] writing top-level names to ../../build/forward_kinematics/forward_kinematics.egg-info/top_level.txt
+[1.609s] reading manifest file '../../build/forward_kinematics/forward_kinematics.egg-info/SOURCES.txt'
+[1.612s] writing manifest file '../../build/forward_kinematics/forward_kinematics.egg-info/SOURCES.txt'
+[1.614s] running build
+[1.615s] running build_py
+[1.617s] running install
+[1.617s] running install_lib
+[1.621s] running install_data
+[1.621s] running install_egg_info
+[1.623s] removing '/home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab3/install/forward_kinematics/lib/python3.10/site-packages/forward_kinematics-0.0.0-py3.10.egg-info' (and everything under it)
+[1.645s] Copying ../../build/forward_kinematics/forward_kinematics.egg-info to /home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab3/install/forward_kinematics/lib/python3.10/site-packages/forward_kinematics-0.0.0-py3.10.egg-info
+[1.673s] running install_scripts
+[1.693s] writing list of installed files to '/home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab3/build/forward_kinematics/install.log'
+[1.755s] Invoked command in '/home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab3/src/forward_kinematics' returned '0': PYTHONPATH=/home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab3/build/forward_kinematics/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab3/install/forward_kinematics/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/forward_kinematics build --build-base /home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab3/build/forward_kinematics/build install --record /home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab3/build/forward_kinematics/install.log --install-scripts $base/lib/forward_kinematics --single-version-externally-managed install_data

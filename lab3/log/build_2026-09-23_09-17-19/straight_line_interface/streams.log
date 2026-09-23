@@ -1,0 +1,247 @@
+[0.151s] Invoking command in '/home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab3/build/straight_line_interface': CMAKE_PREFIX_PATH=/home/ff/ee106a/robot_workspaces/ur/install/ur7e_utils:/opt/ros/humble /usr/bin/cmake /home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab3/src/straight_line_interface -DCMAKE_INSTALL_PREFIX=/home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab3/install/straight_line_interface
+[1.826s] -- The C compiler identification is GNU 11.4.0
+[1.827s] -- The CXX compiler identification is GNU 11.4.0
+[1.827s] -- Detecting C compiler ABI info
+[2.036s] -- Detecting C compiler ABI info - done
+[2.046s] -- Check for working C compiler: /usr/bin/cc - skipped
+[2.046s] -- Detecting C compile features
+[2.047s] -- Detecting C compile features - done
+[2.090s] -- Detecting CXX compiler ABI info
+[2.379s] -- Detecting CXX compiler ABI info - done
+[2.389s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[2.389s] -- Detecting CXX compile features
+[2.390s] -- Detecting CXX compile features - done
+[2.438s] -- Found ament_cmake: 1.3.14 (/opt/ros/humble/share/ament_cmake/cmake)
+[2.888s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[3.144s] -- Found geometry_msgs: 4.9.2 (/opt/ros/humble/share/geometry_msgs/cmake)
+[3.319s] -- Found rosidl_generator_c: 3.1.9 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[3.332s] -- Found rosidl_adapter: 3.1.9 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[3.357s] -- Found rosidl_generator_cpp: 3.1.9 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[3.428s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[3.485s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[3.533s] -- Found rosidl_default_generators: 1.2.1 (/opt/ros/humble/share/rosidl_default_generators/cmake)
+[4.580s] -- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)
+[6.941s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[7.765s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[7.830s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.10.12", minimum required is "3.6") 
+[7.837s] -- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)
+[7.925s] -- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.10.so (found suitable version "3.10.12", minimum required is "3.5") 
+[7.925s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[7.925s] -- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10
+[7.926s] -- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so
+[7.987s] -- Found PythonExtra: .so  
+[8.873s] -- Found ament_lint_auto: 0.12.15 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[9.419s] -- Added test 'lint_cmake' to check CMake code style
+[9.431s] -- Added test 'xmllint' to check XML markup files
+[9.568s] -- Configuring done
+[10.534s] -- Generating done
+[10.730s] -- Build files have been written to: /home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab3/build/straight_line_interface
+[10.736s] Invoked command in '/home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab3/build/straight_line_interface' returned '0': CMAKE_PREFIX_PATH=/home/ff/ee106a/robot_workspaces/ur/install/ur7e_utils:/opt/ros/humble /usr/bin/cmake /home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab3/src/straight_line_interface -DCMAKE_INSTALL_PREFIX=/home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab3/install/straight_line_interface
+[10.748s] Invoking command in '/home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab3/build/straight_line_interface': CMAKE_PREFIX_PATH=/home/ff/ee106a/robot_workspaces/ur/install/ur7e_utils:/opt/ros/humble /usr/bin/cmake --build /home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab3/build/straight_line_interface -- -j32 -l32
+[10.893s] [  3%] [34m[1mGenerating C code for ROS interfaces[0m
+[10.931s] [  9%] [34m[1mGenerating Rust code for ROS interfaces[0m
+[10.932s] [  9%] [34m[1mGenerating C++ code for ROS interfaces[0m
+[10.966s] [  9%] Built target ament_cmake_python_copy_straight_line_interface
+[11.185s] running egg_info
+[11.186s] creating straight_line_interface.egg-info
+[11.188s] writing straight_line_interface.egg-info/PKG-INFO
+[11.192s] writing dependency_links to straight_line_interface.egg-info/dependency_links.txt
+[11.195s] writing top-level names to straight_line_interface.egg-info/top_level.txt
+[11.198s] writing manifest file 'straight_line_interface.egg-info/SOURCES.txt'
+[11.204s] reading manifest file 'straight_line_interface.egg-info/SOURCES.txt'
+[11.204s] writing manifest file 'straight_line_interface.egg-info/SOURCES.txt'
+[11.220s] [  9%] Built target straight_line_interface__rs
+[11.225s] [  9%] Built target ament_cmake_python_build_straight_line_interface_egg
+[11.306s] [ 12%] [32mBuilding C object CMakeFiles/straight_line_interface__rosidl_generator_c.dir/rosidl_generator_c/straight_line_interface/action/detail/move_straight__functions.c.o[0m
+[11.310s] [ 12%] Built target straight_line_interface__cpp
+[11.385s] [ 18%] [34m[1mGenerating C++ type support for eProsima Fast-RTPS[0m
+[11.385s] [ 18%] [34m[1mGenerating C++ type support dispatch for ROS interfaces[0m
+[11.391s] [ 21%] [34m[1mGenerating C++ introspection for ROS interfaces[0m
+[11.715s] [ 25%] [32m[1mLinking C shared library libstraight_line_interface__rosidl_generator_c.so[0m
+[11.771s] [ 25%] Built target straight_line_interface__rosidl_generator_c
+[11.792s] [ 34%] [34m[1mGenerating C type support for eProsima Fast-RTPS[0m
+[11.792s] [ 34%] [34m[1mGenerating C type support dispatch for ROS interfaces[0m
+[11.793s] [ 34%] [34m[1mGenerating C introspection for ROS interfaces[0m
+[11.817s] [ 37%] [32mBuilding CXX object CMakeFiles/straight_line_interface__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/straight_line_interface/action/move_straight__type_support.cpp.o[0m
+[11.880s] [ 40%] [32mBuilding CXX object CMakeFiles/straight_line_interface__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/straight_line_interface/action/detail/move_straight__type_support.cpp.o[0m
+[11.896s] [ 43%] [32mBuilding CXX object CMakeFiles/straight_line_interface__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/straight_line_interface/action/detail/dds_fastrtps/move_straight__type_support.cpp.o[0m
+[12.062s] [ 46%] [32mBuilding CXX object CMakeFiles/straight_line_interface__rosidl_typesupport_c.dir/rosidl_typesupport_c/straight_line_interface/action/move_straight__type_support.cpp.o[0m
+[12.121s] [ 50%] [32mBuilding C object CMakeFiles/straight_line_interface__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/straight_line_interface/action/detail/move_straight__type_support.c.o[0m
+[12.143s] [ 53%] [32mBuilding CXX object CMakeFiles/straight_line_interface__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/straight_line_interface/action/detail/move_straight__type_support_c.cpp.o[0m
+[12.147s] [ 56%] [32m[1mLinking CXX shared library libstraight_line_interface__rosidl_typesupport_c.so[0m
+[12.202s] [ 59%] [32m[1mLinking C shared library libstraight_line_interface__rosidl_typesupport_introspection_c.so[0m
+[12.208s] [ 59%] Built target straight_line_interface__rosidl_typesupport_c
+[12.256s] [ 59%] Built target straight_line_interface__rosidl_typesupport_introspection_c
+[12.291s] [ 62%] [32m[1mLinking CXX shared library libstraight_line_interface__rosidl_typesupport_cpp.so[0m
+[12.349s] [ 62%] Built target straight_line_interface__rosidl_typesupport_cpp
+[12.384s] [ 65%] [32m[1mLinking CXX shared library libstraight_line_interface__rosidl_typesupport_introspection_cpp.so[0m
+[12.400s] [ 68%] [32m[1mLinking CXX shared library libstraight_line_interface__rosidl_typesupport_fastrtps_cpp.so[0m
+[12.445s] [ 71%] [32m[1mLinking CXX shared library libstraight_line_interface__rosidl_typesupport_fastrtps_c.so[0m
+[12.466s] [ 71%] Built target straight_line_interface__rosidl_typesupport_introspection_cpp
+[12.477s] [ 71%] Built target straight_line_interface__rosidl_typesupport_fastrtps_cpp
+[12.551s] [ 71%] Built target straight_line_interface__rosidl_typesupport_fastrtps_c
+[12.618s] [ 71%] Built target straight_line_interface
+[12.683s] [ 75%] [34m[1mGenerating Python code for ROS interfaces[0m
+[13.249s] [ 75%] Built target straight_line_interface__py
+[13.320s] [ 78%] [32mBuilding C object CMakeFiles/straight_line_interface__rosidl_generator_py.dir/rosidl_generator_py/straight_line_interface/action/_move_straight_s.c.o[0m
+[13.541s] [ 81%] [32m[1mLinking C shared library rosidl_generator_py/straight_line_interface/libstraight_line_interface__rosidl_generator_py.so[0m
+[13.693s] [ 81%] Built target straight_line_interface__rosidl_generator_py
+[13.786s] [ 84%] [32mBuilding C object CMakeFiles/straight_line_interface__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/straight_line_interface/_straight_line_interface_s.ep.rosidl_typesupport_introspection_c.c.o[0m
+[13.790s] [ 90%] [32mBuilding C object CMakeFiles/straight_line_interface__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/straight_line_interface/_straight_line_interface_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[13.790s] [ 90%] [32mBuilding C object CMakeFiles/straight_line_interface__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/straight_line_interface/_straight_line_interface_s.ep.rosidl_typesupport_c.c.o[0m
+[13.917s] [ 96%] [32m[1mLinking C shared library rosidl_generator_py/straight_line_interface/straight_line_interface_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so[0m
+[13.917s] [ 96%] [32m[1mLinking C shared library rosidl_generator_py/straight_line_interface/straight_line_interface_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so[0m
+[13.929s] [100%] [32m[1mLinking C shared library rosidl_generator_py/straight_line_interface/straight_line_interface_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so[0m
+[14.021s] [100%] Built target straight_line_interface__rosidl_typesupport_c__pyext
+[14.024s] [100%] Built target straight_line_interface__rosidl_typesupport_introspection_c__pyext
+[14.025s] [100%] Built target straight_line_interface__rosidl_typesupport_fastrtps_c__pyext
+[14.089s] Invoked command in '/home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab3/build/straight_line_interface' returned '0': CMAKE_PREFIX_PATH=/home/ff/ee106a/robot_workspaces/ur/install/ur7e_utils:/opt/ros/humble /usr/bin/cmake --build /home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab3/build/straight_line_interface -- -j32 -l32
+[14.138s] Invoking command in '/home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab3/build/straight_line_interface': CMAKE_PREFIX_PATH=/home/ff/ee106a/robot_workspaces/ur/install/ur7e_utils:/opt/ros/humble /usr/bin/cmake --install /home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab3/build/straight_line_interface
+[14.152s] -- Install configuration: ""
+[14.161s] -- Installing: /home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab3/install/straight_line_interface/share/ament_index/resource_index/rosidl_interfaces/straight_line_interface
+[14.168s] -- Installing: /home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab3/install/straight_line_interface/include/straight_line_interface/straight_line_interface
+[14.175s] -- Installing: /home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab3/install/straight_line_interface/include/straight_line_interface/straight_line_interface/action
+[14.181s] -- Installing: /home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab3/install/straight_line_interface/include/straight_line_interface/straight_line_interface/action/detail
+[14.187s] -- Installing: /home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab3/install/straight_line_interface/include/straight_line_interface/straight_line_interface/action/detail/move_straight__functions.c
+[14.193s] -- Installing: /home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab3/install/straight_line_interface/include/straight_line_interface/straight_line_interface/action/detail/move_straight__type_support.h
+[14.200s] -- Installing: /home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab3/install/straight_line_interface/include/straight_line_interface/straight_line_interface/action/detail/move_straight__struct.h
+[14.206s] -- Installing: /home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab3/install/straight_line_interface/include/straight_line_interface/straight_line_interface/action/detail/move_straight__functions.h
+[14.213s] -- Installing: /home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab3/install/straight_line_interface/include/straight_line_interface/straight_line_interface/action/move_straight.h
+[14.219s] -- Installing: /home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab3/install/straight_line_interface/include/straight_line_interface/straight_line_interface/msg
+[14.225s] -- Installing: /home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab3/install/straight_line_interface/include/straight_line_interface/straight_line_interface/msg/rosidl_generator_c__visibility_control.h
+[14.236s] -- Installing: /home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab3/install/straight_line_interface/share/straight_line_interface/environment/library_path.sh
+[14.246s] -- Installing: /home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab3/install/straight_line_interface/share/straight_line_interface/environment/library_path.dsv
+[14.255s] -- Installing: /home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab3/install/straight_line_interface/lib/libstraight_line_interface__rosidl_generator_c.so
+[14.266s] -- Set runtime path of "/home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab3/install/straight_line_interface/lib/libstraight_line_interface__rosidl_generator_c.so" to ""
+[14.268s] -- Up-to-date: /home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab3/install/straight_line_interface/include/straight_line_interface/straight_line_interface
+[14.269s] -- Up-to-date: /home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab3/install/straight_line_interface/include/straight_line_interface/straight_line_interface/action
+[14.271s] -- Up-to-date: /home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab3/install/straight_line_interface/include/straight_line_interface/straight_line_interface/action/detail
+[14.273s] -- Installing: /home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab3/install/straight_line_interface/include/straight_line_interface/straight_line_interface/action/detail/move_straight__rosidl_typesupport_fastrtps_c.h
+[14.279s] -- Up-to-date: /home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab3/install/straight_line_interface/include/straight_line_interface/straight_line_interface/msg
+[14.281s] -- Installing: /home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab3/install/straight_line_interface/include/straight_line_interface/straight_line_interface/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[14.288s] -- Installing: /home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab3/install/straight_line_interface/lib/libstraight_line_interface__rosidl_typesupport_fastrtps_c.so
+[14.297s] -- Set runtime path of "/home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab3/install/straight_line_interface/lib/libstraight_line_interface__rosidl_typesupport_fastrtps_c.so" to ""
+[14.298s] -- Up-to-date: /home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab3/install/straight_line_interface/include/straight_line_interface/straight_line_interface
+[14.300s] -- Up-to-date: /home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab3/install/straight_line_interface/include/straight_line_interface/straight_line_interface/action
+[14.303s] -- Installing: /home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab3/install/straight_line_interface/include/straight_line_interface/straight_line_interface/action/move_straight.hpp
+[14.309s] -- Up-to-date: /home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab3/install/straight_line_interface/include/straight_line_interface/straight_line_interface/action/detail
+[14.311s] -- Installing: /home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab3/install/straight_line_interface/include/straight_line_interface/straight_line_interface/action/detail/move_straight__traits.hpp
+[14.317s] -- Installing: /home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab3/install/straight_line_interface/include/straight_line_interface/straight_line_interface/action/detail/move_straight__struct.hpp
+[14.324s] -- Installing: /home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab3/install/straight_line_interface/include/straight_line_interface/straight_line_interface/action/detail/move_straight__type_support.hpp
+[14.330s] -- Installing: /home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab3/install/straight_line_interface/include/straight_line_interface/straight_line_interface/action/detail/move_straight__builder.hpp
+[14.336s] -- Up-to-date: /home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab3/install/straight_line_interface/include/straight_line_interface/straight_line_interface/msg
+[14.338s] -- Installing: /home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab3/install/straight_line_interface/include/straight_line_interface/straight_line_interface/msg/rosidl_generator_cpp__visibility_control.hpp
+[14.345s] -- Up-to-date: /home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab3/install/straight_line_interface/include/straight_line_interface/straight_line_interface
+[14.347s] -- Up-to-date: /home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab3/install/straight_line_interface/include/straight_line_interface/straight_line_interface/action
+[14.348s] -- Up-to-date: /home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab3/install/straight_line_interface/include/straight_line_interface/straight_line_interface/action/detail
+[14.350s] -- Installing: /home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab3/install/straight_line_interface/include/straight_line_interface/straight_line_interface/action/detail/move_straight__rosidl_typesupport_fastrtps_cpp.hpp
+[14.357s] -- Installing: /home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab3/install/straight_line_interface/include/straight_line_interface/straight_line_interface/action/detail/dds_fastrtps
+[14.363s] -- Up-to-date: /home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab3/install/straight_line_interface/include/straight_line_interface/straight_line_interface/msg
+[14.365s] -- Installing: /home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab3/install/straight_line_interface/include/straight_line_interface/straight_line_interface/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[14.372s] -- Installing: /home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab3/install/straight_line_interface/lib/libstraight_line_interface__rosidl_typesupport_fastrtps_cpp.so
+[14.383s] -- Set runtime path of "/home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab3/install/straight_line_interface/lib/libstraight_line_interface__rosidl_typesupport_fastrtps_cpp.so" to ""
+[14.384s] -- Up-to-date: /home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab3/install/straight_line_interface/include/straight_line_interface/straight_line_interface
+[14.386s] -- Up-to-date: /home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab3/install/straight_line_interface/include/straight_line_interface/straight_line_interface/msg
+[14.388s] -- Installing: /home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab3/install/straight_line_interface/include/straight_line_interface/straight_line_interface/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[14.394s] -- Up-to-date: /home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab3/install/straight_line_interface/include/straight_line_interface/straight_line_interface/action
+[14.396s] -- Up-to-date: /home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab3/install/straight_line_interface/include/straight_line_interface/straight_line_interface/action/detail
+[14.398s] -- Installing: /home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab3/install/straight_line_interface/include/straight_line_interface/straight_line_interface/action/detail/move_straight__rosidl_typesupport_introspection_c.h
+[14.405s] -- Installing: /home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab3/install/straight_line_interface/include/straight_line_interface/straight_line_interface/action/detail/move_straight__type_support.c
+[14.411s] -- Installing: /home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab3/install/straight_line_interface/lib/libstraight_line_interface__rosidl_typesupport_introspection_c.so
+[14.420s] -- Set runtime path of "/home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab3/install/straight_line_interface/lib/libstraight_line_interface__rosidl_typesupport_introspection_c.so" to ""
+[14.422s] -- Installing: /home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab3/install/straight_line_interface/lib/libstraight_line_interface__rosidl_typesupport_c.so
+[14.430s] -- Set runtime path of "/home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab3/install/straight_line_interface/lib/libstraight_line_interface__rosidl_typesupport_c.so" to ""
+[14.432s] -- Up-to-date: /home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab3/install/straight_line_interface/include/straight_line_interface/straight_line_interface
+[14.434s] -- Up-to-date: /home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab3/install/straight_line_interface/include/straight_line_interface/straight_line_interface/action
+[14.436s] -- Up-to-date: /home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab3/install/straight_line_interface/include/straight_line_interface/straight_line_interface/action/detail
+[14.437s] -- Installing: /home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab3/install/straight_line_interface/include/straight_line_interface/straight_line_interface/action/detail/move_straight__rosidl_typesupport_introspection_cpp.hpp
+[14.444s] -- Installing: /home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab3/install/straight_line_interface/include/straight_line_interface/straight_line_interface/action/detail/move_straight__type_support.cpp
+[14.452s] -- Installing: /home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab3/install/straight_line_interface/lib/libstraight_line_interface__rosidl_typesupport_introspection_cpp.so
+[14.461s] -- Set runtime path of "/home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab3/install/straight_line_interface/lib/libstraight_line_interface__rosidl_typesupport_introspection_cpp.so" to ""
+[14.463s] -- Installing: /home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab3/install/straight_line_interface/lib/libstraight_line_interface__rosidl_typesupport_cpp.so
+[14.473s] -- Set runtime path of "/home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab3/install/straight_line_interface/lib/libstraight_line_interface__rosidl_typesupport_cpp.so" to ""
+[14.475s] -- Installing: /home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab3/install/straight_line_interface/share/straight_line_interface/environment/pythonpath.sh
+[14.482s] -- Installing: /home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab3/install/straight_line_interface/share/straight_line_interface/environment/pythonpath.dsv
+[14.488s] -- Installing: /home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab3/install/straight_line_interface/local/lib/python3.10/dist-packages/straight_line_interface-0.0.0-py3.10.egg-info
+[14.498s] -- Installing: /home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab3/install/straight_line_interface/local/lib/python3.10/dist-packages/straight_line_interface-0.0.0-py3.10.egg-info/dependency_links.txt
+[14.505s] -- Installing: /home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab3/install/straight_line_interface/local/lib/python3.10/dist-packages/straight_line_interface-0.0.0-py3.10.egg-info/top_level.txt
+[14.511s] -- Installing: /home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab3/install/straight_line_interface/local/lib/python3.10/dist-packages/straight_line_interface-0.0.0-py3.10.egg-info/SOURCES.txt
+[14.518s] -- Installing: /home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab3/install/straight_line_interface/local/lib/python3.10/dist-packages/straight_line_interface-0.0.0-py3.10.egg-info/PKG-INFO
+[14.525s] -- Installing: /home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab3/install/straight_line_interface/local/lib/python3.10/dist-packages/straight_line_interface
+[14.531s] -- Installing: /home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab3/install/straight_line_interface/local/lib/python3.10/dist-packages/straight_line_interface/straight_line_interface_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[14.586s] -- Installing: /home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab3/install/straight_line_interface/local/lib/python3.10/dist-packages/straight_line_interface/action
+[14.593s] -- Installing: /home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab3/install/straight_line_interface/local/lib/python3.10/dist-packages/straight_line_interface/action/__init__.py
+[14.599s] -- Installing: /home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab3/install/straight_line_interface/local/lib/python3.10/dist-packages/straight_line_interface/action/_move_straight.py
+[14.607s] -- Installing: /home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab3/install/straight_line_interface/local/lib/python3.10/dist-packages/straight_line_interface/action/_move_straight_s.c
+[14.614s] -- Installing: /home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab3/install/straight_line_interface/local/lib/python3.10/dist-packages/straight_line_interface/straight_line_interface_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[14.621s] -- Installing: /home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab3/install/straight_line_interface/local/lib/python3.10/dist-packages/straight_line_interface/_straight_line_interface_s.ep.rosidl_typesupport_fastrtps_c.c
+[14.628s] -- Installing: /home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab3/install/straight_line_interface/local/lib/python3.10/dist-packages/straight_line_interface/_straight_line_interface_s.ep.rosidl_typesupport_c.c
+[14.635s] -- Installing: /home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab3/install/straight_line_interface/local/lib/python3.10/dist-packages/straight_line_interface/__init__.py
+[14.641s] -- Installing: /home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab3/install/straight_line_interface/local/lib/python3.10/dist-packages/straight_line_interface/libstraight_line_interface__rosidl_generator_py.so
+[14.647s] -- Installing: /home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab3/install/straight_line_interface/local/lib/python3.10/dist-packages/straight_line_interface/_straight_line_interface_s.ep.rosidl_typesupport_introspection_c.c
+[14.655s] -- Installing: /home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab3/install/straight_line_interface/local/lib/python3.10/dist-packages/straight_line_interface/straight_line_interface_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[14.785s] Listing '/home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab3/install/straight_line_interface/local/lib/python3.10/dist-packages/straight_line_interface'...
+[14.786s] Compiling '/home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab3/install/straight_line_interface/local/lib/python3.10/dist-packages/straight_line_interface/__init__.py'...
+[14.786s] Listing '/home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab3/install/straight_line_interface/local/lib/python3.10/dist-packages/straight_line_interface/action'...
+[14.786s] Compiling '/home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab3/install/straight_line_interface/local/lib/python3.10/dist-packages/straight_line_interface/action/__init__.py'...
+[14.786s] Compiling '/home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab3/install/straight_line_interface/local/lib/python3.10/dist-packages/straight_line_interface/action/_move_straight.py'...
+[14.794s] -- Installing: /home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab3/install/straight_line_interface/local/lib/python3.10/dist-packages/straight_line_interface/straight_line_interface_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[14.805s] -- Set runtime path of "/home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab3/install/straight_line_interface/local/lib/python3.10/dist-packages/straight_line_interface/straight_line_interface_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so" to ""
+[14.809s] -- Installing: /home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab3/install/straight_line_interface/local/lib/python3.10/dist-packages/straight_line_interface/straight_line_interface_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[14.821s] -- Set runtime path of "/home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab3/install/straight_line_interface/local/lib/python3.10/dist-packages/straight_line_interface/straight_line_interface_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so" to ""
+[14.825s] -- Installing: /home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab3/install/straight_line_interface/local/lib/python3.10/dist-packages/straight_line_interface/straight_line_interface_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[14.835s] -- Set runtime path of "/home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab3/install/straight_line_interface/local/lib/python3.10/dist-packages/straight_line_interface/straight_line_interface_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so" to ""
+[14.836s] -- Installing: /home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab3/install/straight_line_interface/lib/libstraight_line_interface__rosidl_generator_py.so
+[14.846s] -- Set runtime path of "/home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab3/install/straight_line_interface/lib/libstraight_line_interface__rosidl_generator_py.so" to ""
+[14.852s] -- Installing: /home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab3/install/straight_line_interface/share/ament_index/resource_index/rust_packages/straight_line_interface
+[14.858s] -- Installing: /home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab3/install/straight_line_interface/share/straight_line_interface/rust
+[14.864s] -- Installing: /home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab3/install/straight_line_interface/share/straight_line_interface/rust/src
+[14.870s] -- Installing: /home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab3/install/straight_line_interface/share/straight_line_interface/rust/src/action
+[14.877s] -- Installing: /home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab3/install/straight_line_interface/share/straight_line_interface/rust/src/action/rmw.rs
+[14.883s] -- Installing: /home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab3/install/straight_line_interface/share/straight_line_interface/rust/src/action.rs
+[14.891s] -- Installing: /home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab3/install/straight_line_interface/share/straight_line_interface/rust/src/lib.rs
+[14.898s] -- Installing: /home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab3/install/straight_line_interface/share/straight_line_interface/rust/build.rs
+[14.904s] -- Installing: /home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab3/install/straight_line_interface/share/straight_line_interface/rust/Cargo.toml
+[14.915s] -- Installing: /home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab3/install/straight_line_interface/share/straight_line_interface/action/MoveStraight.idl
+[14.922s] -- Installing: /home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab3/install/straight_line_interface/share/straight_line_interface/action/MoveStraight.action
+[14.932s] -- Installing: /home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab3/install/straight_line_interface/share/ament_index/resource_index/package_run_dependencies/straight_line_interface
+[14.944s] -- Installing: /home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab3/install/straight_line_interface/share/ament_index/resource_index/parent_prefix_path/straight_line_interface
+[14.952s] -- Installing: /home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab3/install/straight_line_interface/share/straight_line_interface/environment/ament_prefix_path.sh
+[14.961s] -- Installing: /home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab3/install/straight_line_interface/share/straight_line_interface/environment/ament_prefix_path.dsv
+[14.967s] -- Installing: /home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab3/install/straight_line_interface/share/straight_line_interface/environment/path.sh
+[14.977s] -- Installing: /home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab3/install/straight_line_interface/share/straight_line_interface/environment/path.dsv
+[14.984s] -- Installing: /home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab3/install/straight_line_interface/share/straight_line_interface/local_setup.bash
+[14.990s] -- Installing: /home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab3/install/straight_line_interface/share/straight_line_interface/local_setup.sh
+[14.996s] -- Installing: /home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab3/install/straight_line_interface/share/straight_line_interface/local_setup.zsh
+[15.003s] -- Installing: /home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab3/install/straight_line_interface/share/straight_line_interface/local_setup.dsv
+[15.009s] -- Installing: /home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab3/install/straight_line_interface/share/straight_line_interface/package.dsv
+[15.021s] -- Installing: /home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab3/install/straight_line_interface/share/ament_index/resource_index/packages/straight_line_interface
+[15.031s] -- Installing: /home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab3/install/straight_line_interface/share/straight_line_interface/cmake/export_straight_line_interface__rosidl_generator_cExport.cmake
+[15.038s] -- Installing: /home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab3/install/straight_line_interface/share/straight_line_interface/cmake/export_straight_line_interface__rosidl_generator_cExport-noconfig.cmake
+[15.044s] -- Installing: /home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab3/install/straight_line_interface/share/straight_line_interface/cmake/export_straight_line_interface__rosidl_typesupport_fastrtps_cExport.cmake
+[15.051s] -- Installing: /home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab3/install/straight_line_interface/share/straight_line_interface/cmake/export_straight_line_interface__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+[15.057s] -- Installing: /home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab3/install/straight_line_interface/share/straight_line_interface/cmake/export_straight_line_interface__rosidl_generator_cppExport.cmake
+[15.064s] -- Installing: /home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab3/install/straight_line_interface/share/straight_line_interface/cmake/export_straight_line_interface__rosidl_typesupport_fastrtps_cppExport.cmake
+[15.071s] -- Installing: /home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab3/install/straight_line_interface/share/straight_line_interface/cmake/export_straight_line_interface__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+[15.079s] -- Installing: /home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab3/install/straight_line_interface/share/straight_line_interface/cmake/straight_line_interface__rosidl_typesupport_introspection_cExport.cmake
+[15.087s] -- Installing: /home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab3/install/straight_line_interface/share/straight_line_interface/cmake/straight_line_interface__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[15.094s] -- Installing: /home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab3/install/straight_line_interface/share/straight_line_interface/cmake/straight_line_interface__rosidl_typesupport_cExport.cmake
+[15.100s] -- Installing: /home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab3/install/straight_line_interface/share/straight_line_interface/cmake/straight_line_interface__rosidl_typesupport_cExport-noconfig.cmake
+[15.107s] -- Installing: /home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab3/install/straight_line_interface/share/straight_line_interface/cmake/straight_line_interface__rosidl_typesupport_introspection_cppExport.cmake
+[15.114s] -- Installing: /home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab3/install/straight_line_interface/share/straight_line_interface/cmake/straight_line_interface__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[15.121s] -- Installing: /home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab3/install/straight_line_interface/share/straight_line_interface/cmake/straight_line_interface__rosidl_typesupport_cppExport.cmake
+[15.128s] -- Installing: /home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab3/install/straight_line_interface/share/straight_line_interface/cmake/straight_line_interface__rosidl_typesupport_cppExport-noconfig.cmake
+[15.135s] -- Installing: /home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab3/install/straight_line_interface/share/straight_line_interface/cmake/export_straight_line_interface__rosidl_generator_pyExport.cmake
+[15.142s] -- Installing: /home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab3/install/straight_line_interface/share/straight_line_interface/cmake/export_straight_line_interface__rosidl_generator_pyExport-noconfig.cmake
+[15.151s] -- Installing: /home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab3/install/straight_line_interface/share/straight_line_interface/cmake/rosidl_cmake-extras.cmake
+[15.157s] -- Installing: /home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab3/install/straight_line_interface/share/straight_line_interface/cmake/ament_cmake_export_dependencies-extras.cmake
+[15.164s] -- Installing: /home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab3/install/straight_line_interface/share/straight_line_interface/cmake/ament_cmake_export_include_directories-extras.cmake
+[15.172s] -- Installing: /home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab3/install/straight_line_interface/share/straight_line_interface/cmake/ament_cmake_export_libraries-extras.cmake
+[15.179s] -- Installing: /home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab3/install/straight_line_interface/share/straight_line_interface/cmake/ament_cmake_export_targets-extras.cmake
+[15.186s] -- Installing: /home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab3/install/straight_line_interface/share/straight_line_interface/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[15.193s] -- Installing: /home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab3/install/straight_line_interface/share/straight_line_interface/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[15.200s] -- Installing: /home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab3/install/straight_line_interface/share/straight_line_interface/cmake/rosidl_cmake_aggregate_target-extras.cmake
+[15.207s] -- Installing: /home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab3/install/straight_line_interface/share/straight_line_interface/cmake/straight_line_interfaceConfig.cmake
+[15.213s] -- Installing: /home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab3/install/straight_line_interface/share/straight_line_interface/cmake/straight_line_interfaceConfig-version.cmake
+[15.220s] -- Installing: /home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab3/install/straight_line_interface/share/straight_line_interface/package.xml
+[15.237s] Invoked command in '/home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab3/build/straight_line_interface' returned '0': CMAKE_PREFIX_PATH=/home/ff/ee106a/robot_workspaces/ur/install/ur7e_utils:/opt/ros/humble /usr/bin/cmake --install /home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab3/build/straight_line_interface
