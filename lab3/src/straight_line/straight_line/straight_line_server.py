@@ -27,7 +27,7 @@ class StraightLineServer(Node):
 
         self._switch_cli = self.create_client(
             SwitchController,
-            '/controller_manager/switch_controller',
+            '/controller_manager/switch_controller', 
             callback_group=self._cb_group,
         )
         self._cart_cli = self.create_client(
@@ -44,7 +44,7 @@ class StraightLineServer(Node):
 
         self._action_server = ActionServer(
             self,
-            MoveStraight
+            MoveStraight,
             'move_straight',
             execute_callback=self.execute_callback,
             goal_callback=self.goal_callback,
@@ -55,11 +55,11 @@ class StraightLineServer(Node):
 
     def goal_callback(self, goal_request):
         self.get_logger().info('Received MoveStraight goal request')
-        return ...
+        return GoalResponse.ACCEPT
 
     def cancel_callback(self, goal_handle: ServerGoalHandle):
         self.get_logger().info('Received cancel')
-        return ...
+        return CancelResponse.ACCEPT
 
     def _lookup_tool0_pose(self) -> Pose:
         """
@@ -68,7 +68,17 @@ class StraightLineServer(Node):
         this can fail!
         """
         # hint: self._tf_buffer.lookup_transform
-        return ...
+        t = self._tf_buffer.lookup_transform(
+            'base_link',
+            'tool0',
+            rclpy.time.Time(),
+        )
+        p = Pose()
+        p.position.x = t.transform.translation.x
+        p.position.y = t.transform.translation.y
+        p.position.z = t.transform.translation.z
+        p.orientation = t.transform.rotation
+        return p
 
     def _ensure_controller(self) -> bool:
         """
@@ -87,9 +97,11 @@ class StraightLineServer(Node):
         if not self._switch_cli.wait_for_service(timeout_sec=5.0):
             self.get_logger().error('switch_controller service unavailable')
             return False
-
+        
         req = SwitchController.Request()
         # TODO: fill in `req`
+        req.activate_controllers = 'scaled_joint_trajectory_controller'
+        req.deactivate_controllers = ['freedrive_mode_controller', 'forward_position_controller', 'forward_velocity_controller']
         
         future = self._switch_cli.call_async(req)
         if not self._wait_future(future, timeout_sec=10.0):
@@ -110,7 +122,7 @@ class StraightLineServer(Node):
     def _plan_cartesian(self, target_pose: Pose, max_step: float):
         """get the path.
         call _cart_cli (using the GetCartesianPath service type)
-        if this fails, it will log an error to the logger.
+        if this fails, it will log an error to the logger. 
 
         return type is (trajectory, fraction_planned, error). the
         `error` value is just the error_code that moveit's planner
@@ -133,16 +145,16 @@ class StraightLineServer(Node):
 
         # TODO: fill these out!
         # check the docs: https://docs.ros.org/en/humble/p/moveit_msgs/srv/GetCartesianPath.html
-        req.link_name = ...
-        req.waypoints = ...
-        req.max_step = ...
+        req.link_name = 'tool0'
+        req.waypoints = [target_pose]
+        req.max_step = max_step
         
         req.jump_threshold = 0.0
         req.avoid_collisions = True
         
         fut = self._cart_cli.call_async(req)
         
-        if not self._wait_future(future, timeout_sec=30.0):
+        if not self._wait_future(fut, timeout_sec=30.0):
             self.get_logger().error('Cartesian planning timed out')
             return None, 0.0, -1
 
@@ -177,7 +189,7 @@ class StraightLineServer(Node):
             return False, 'FollowJointTrajectory action server unavailable'
 
         # TODO: construct the correct goal message for the FollowJointTrajectory action.
-        goal = ...
+        goal = FollowJointTrajectory()
         
         send_future = self._exec_ac.send_goal_async(goal)
         if not self._wait_future(send_future, timeout_sec=10.0):
