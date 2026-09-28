@@ -114,7 +114,18 @@ class NavClient(Node):
 
         # TODO 4: build and return the PoseStamped. it needs a frame_id, a stamp, a
         # position and an orientation. yaw_to_quat is given
-        raise NotImplementedError
+        yaw_quat = yaw_to_quaternion(yaw)
+
+        msg = PoseStamped()
+        msg.header.frame_id = 'odom'
+        msg.header.stamp = self.get_clock().now().to_msg()
+        msg.pose.position.x = x
+        msg.pose.position.y = y
+        msg.pose.position.z =  0.0
+        msg.pose.orientation.x = yaw_quat[0]
+        msg.pose.orientation.y = yaw_quat[1]
+        msg.pose.orientation.z = yaw_quat[2]
+        msg.pose.orientation.w = yaw_quat[3]
 
     def send(self):
         goal = self.make_goal()
@@ -129,7 +140,8 @@ class NavClient(Node):
         # TODO 5: build the goal message, send it with on_feedback as the feedback
         # callback, and hand the future it returns to on_goal_response. read
         # on_goal_response below first -- it does the same trick a second time.
-        raise NotImplementedError
+        feedback = self.on_feedback(goal)
+        self.on_goal_response(feedback)
 
     def on_goal_response(self, future):
         handle = future.result()
