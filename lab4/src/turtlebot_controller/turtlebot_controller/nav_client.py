@@ -117,7 +117,7 @@ class NavClient(Node):
         yaw_quat = yaw_to_quaternion(yaw)
 
         msg = PoseStamped()
-        msg.header.frame_id = 'odom'
+        msg.header.frame_id = self.goal_frame
         msg.header.stamp = self.get_clock().now().to_msg()
         msg.pose.position.x = x
         msg.pose.position.y = y
@@ -126,6 +126,7 @@ class NavClient(Node):
         msg.pose.orientation.y = yaw_quat[1]
         msg.pose.orientation.z = yaw_quat[2]
         msg.pose.orientation.w = yaw_quat[3]
+        return msg
 
     def send(self):
         goal = self.make_goal()
@@ -140,8 +141,10 @@ class NavClient(Node):
         # TODO 5: build the goal message, send it with on_feedback as the feedback
         # callback, and hand the future it returns to on_goal_response. read
         # on_goal_response below first -- it does the same trick a second time.
-        feedback = self.on_feedback(goal)
-        self.on_goal_response(feedback)
+        msg = NavigateToPose.Goal()
+        msg.pose = goal
+        self.client.send_goal_async(msg, feedback_callback=self.on_feedback).add_done_callback(self.on_goal_response)
+        return True
 
     def on_goal_response(self, future):
         handle = future.result()
@@ -155,7 +158,7 @@ class NavClient(Node):
 
     def on_feedback(self, msg):
         # TODO 6: print how far Nav2 thinks it still has to go. 
-        raise NotImplementedError
+        self.get_logger().info(f"{msg.feedback.distance_remaining:.2f} left")
 
     def on_result(self, future):
         status = future.result().status
