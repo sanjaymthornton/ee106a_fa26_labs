@@ -1,0 +1,349 @@
+[0.609s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[0.609s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=32, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, mixin_files=None, mixin=None, verb_parser=<colcon_mixin.mixin.mixin_argument.MixinArgumentDecorator object at 0x723f7ab454b0>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x723f7ab44fd0>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x723f7ab44fd0>>, mixin_verb=('build',))
+[0.837s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.837s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.837s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.837s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.837s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.837s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.837s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab3'
+[0.838s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.838s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.838s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.839s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.839s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.839s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.839s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.839s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.839s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.850s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.850s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.850s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.850s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.850s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.851s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.851s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.851s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.852s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.852s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.852s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.853s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.853s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.853s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.854s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.854s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[0.854s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[0.855s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[0.855s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[0.855s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[0.855s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[0.855s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[0.855s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[0.856s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[0.856s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[0.856s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[0.857s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[0.857s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[0.858s] Level 1:colcon.colcon_core.package_identification:_identify(src/forward_kinematics) by extensions ['ignore', 'ignore_ament_install']
+[0.858s] Level 1:colcon.colcon_core.package_identification:_identify(src/forward_kinematics) by extension 'ignore'
+[0.858s] Level 1:colcon.colcon_core.package_identification:_identify(src/forward_kinematics) by extension 'ignore_ament_install'
+[0.858s] Level 1:colcon.colcon_core.package_identification:_identify(src/forward_kinematics) by extensions ['colcon_pkg']
+[0.858s] Level 1:colcon.colcon_core.package_identification:_identify(src/forward_kinematics) by extension 'colcon_pkg'
+[0.859s] Level 1:colcon.colcon_core.package_identification:_identify(src/forward_kinematics) by extensions ['colcon_meta']
+[0.859s] Level 1:colcon.colcon_core.package_identification:_identify(src/forward_kinematics) by extension 'colcon_meta'
+[0.859s] Level 1:colcon.colcon_core.package_identification:_identify(src/forward_kinematics) by extensions ['ros']
+[0.859s] Level 1:colcon.colcon_core.package_identification:_identify(src/forward_kinematics) by extension 'ros'
+[0.863s] DEBUG:colcon.colcon_core.package_identification:Package 'src/forward_kinematics' with type 'ros.ament_python' and name 'forward_kinematics'
+[0.863s] Level 1:colcon.colcon_core.package_identification:_identify(src/joint_control) by extensions ['ignore', 'ignore_ament_install']
+[0.863s] Level 1:colcon.colcon_core.package_identification:_identify(src/joint_control) by extension 'ignore'
+[0.864s] Level 1:colcon.colcon_core.package_identification:_identify(src/joint_control) by extension 'ignore_ament_install'
+[0.864s] Level 1:colcon.colcon_core.package_identification:_identify(src/joint_control) by extensions ['colcon_pkg']
+[0.864s] Level 1:colcon.colcon_core.package_identification:_identify(src/joint_control) by extension 'colcon_pkg'
+[0.864s] Level 1:colcon.colcon_core.package_identification:_identify(src/joint_control) by extensions ['colcon_meta']
+[0.864s] Level 1:colcon.colcon_core.package_identification:_identify(src/joint_control) by extension 'colcon_meta'
+[0.864s] Level 1:colcon.colcon_core.package_identification:_identify(src/joint_control) by extensions ['ros']
+[0.865s] Level 1:colcon.colcon_core.package_identification:_identify(src/joint_control) by extension 'ros'
+[0.867s] DEBUG:colcon.colcon_core.package_identification:Package 'src/joint_control' with type 'ros.ament_python' and name 'joint_control'
+[0.867s] Level 1:colcon.colcon_core.package_identification:_identify(src/straight_line) by extensions ['ignore', 'ignore_ament_install']
+[0.867s] Level 1:colcon.colcon_core.package_identification:_identify(src/straight_line) by extension 'ignore'
+[0.867s] Level 1:colcon.colcon_core.package_identification:_identify(src/straight_line) by extension 'ignore_ament_install'
+[0.868s] Level 1:colcon.colcon_core.package_identification:_identify(src/straight_line) by extensions ['colcon_pkg']
+[0.868s] Level 1:colcon.colcon_core.package_identification:_identify(src/straight_line) by extension 'colcon_pkg'
+[0.868s] Level 1:colcon.colcon_core.package_identification:_identify(src/straight_line) by extensions ['colcon_meta']
+[0.868s] Level 1:colcon.colcon_core.package_identification:_identify(src/straight_line) by extension 'colcon_meta'
+[0.868s] Level 1:colcon.colcon_core.package_identification:_identify(src/straight_line) by extensions ['ros']
+[0.868s] Level 1:colcon.colcon_core.package_identification:_identify(src/straight_line) by extension 'ros'
+[0.871s] DEBUG:colcon.colcon_core.package_identification:Package 'src/straight_line' with type 'ros.ament_python' and name 'straight_line'
+[0.872s] Level 1:colcon.colcon_core.package_identification:_identify(src/straight_line_interface) by extensions ['ignore', 'ignore_ament_install']
+[0.872s] Level 1:colcon.colcon_core.package_identification:_identify(src/straight_line_interface) by extension 'ignore'
+[0.872s] Level 1:colcon.colcon_core.package_identification:_identify(src/straight_line_interface) by extension 'ignore_ament_install'
+[0.873s] Level 1:colcon.colcon_core.package_identification:_identify(src/straight_line_interface) by extensions ['colcon_pkg']
+[0.873s] Level 1:colcon.colcon_core.package_identification:_identify(src/straight_line_interface) by extension 'colcon_pkg'
+[0.873s] Level 1:colcon.colcon_core.package_identification:_identify(src/straight_line_interface) by extensions ['colcon_meta']
+[0.873s] Level 1:colcon.colcon_core.package_identification:_identify(src/straight_line_interface) by extension 'colcon_meta'
+[0.873s] Level 1:colcon.colcon_core.package_identification:_identify(src/straight_line_interface) by extensions ['ros']
+[0.873s] Level 1:colcon.colcon_core.package_identification:_identify(src/straight_line_interface) by extension 'ros'
+[0.875s] DEBUG:colcon.colcon_core.package_identification:Package 'src/straight_line_interface' with type 'ros.ament_cmake' and name 'straight_line_interface'
+[0.876s] Level 1:colcon.colcon_core.package_identification:_identify(src/tf_listener) by extensions ['ignore', 'ignore_ament_install']
+[0.876s] Level 1:colcon.colcon_core.package_identification:_identify(src/tf_listener) by extension 'ignore'
+[0.877s] Level 1:colcon.colcon_core.package_identification:_identify(src/tf_listener) by extension 'ignore_ament_install'
+[0.877s] Level 1:colcon.colcon_core.package_identification:_identify(src/tf_listener) by extensions ['colcon_pkg']
+[0.877s] Level 1:colcon.colcon_core.package_identification:_identify(src/tf_listener) by extension 'colcon_pkg'
+[0.877s] Level 1:colcon.colcon_core.package_identification:_identify(src/tf_listener) by extensions ['colcon_meta']
+[0.877s] Level 1:colcon.colcon_core.package_identification:_identify(src/tf_listener) by extension 'colcon_meta'
+[0.877s] Level 1:colcon.colcon_core.package_identification:_identify(src/tf_listener) by extensions ['ros']
+[0.877s] Level 1:colcon.colcon_core.package_identification:_identify(src/tf_listener) by extension 'ros'
+[0.880s] DEBUG:colcon.colcon_core.package_identification:Package 'src/tf_listener' with type 'ros.ament_python' and name 'tf_listener'
+[0.880s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.880s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.880s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.880s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.880s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.917s] Level 5:colcon.colcon_core.verb:set package 'forward_kinematics' build argument 'cmake_args' from command line to 'None'
+[0.917s] Level 5:colcon.colcon_core.verb:set package 'forward_kinematics' build argument 'cmake_target' from command line to 'None'
+[0.917s] Level 5:colcon.colcon_core.verb:set package 'forward_kinematics' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.917s] Level 5:colcon.colcon_core.verb:set package 'forward_kinematics' build argument 'cmake_clean_cache' from command line to 'False'
+[0.917s] Level 5:colcon.colcon_core.verb:set package 'forward_kinematics' build argument 'cmake_clean_first' from command line to 'False'
+[0.917s] Level 5:colcon.colcon_core.verb:set package 'forward_kinematics' build argument 'cmake_force_configure' from command line to 'False'
+[0.917s] Level 5:colcon.colcon_core.verb:set package 'forward_kinematics' build argument 'ament_cmake_args' from command line to 'None'
+[0.917s] Level 5:colcon.colcon_core.verb:set package 'forward_kinematics' build argument 'catkin_cmake_args' from command line to 'None'
+[0.917s] Level 5:colcon.colcon_core.verb:set package 'forward_kinematics' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.917s] DEBUG:colcon.colcon_core.verb:Building package 'forward_kinematics' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab3/build/forward_kinematics', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab3/install/forward_kinematics', 'merge_install': False, 'path': '/home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab3/src/forward_kinematics', 'symlink_install': False, 'test_result_base': None}
+[0.917s] Level 5:colcon.colcon_core.verb:set package 'joint_control' build argument 'cmake_args' from command line to 'None'
+[0.917s] Level 5:colcon.colcon_core.verb:set package 'joint_control' build argument 'cmake_target' from command line to 'None'
+[0.917s] Level 5:colcon.colcon_core.verb:set package 'joint_control' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.917s] Level 5:colcon.colcon_core.verb:set package 'joint_control' build argument 'cmake_clean_cache' from command line to 'False'
+[0.917s] Level 5:colcon.colcon_core.verb:set package 'joint_control' build argument 'cmake_clean_first' from command line to 'False'
+[0.917s] Level 5:colcon.colcon_core.verb:set package 'joint_control' build argument 'cmake_force_configure' from command line to 'False'
+[0.917s] Level 5:colcon.colcon_core.verb:set package 'joint_control' build argument 'ament_cmake_args' from command line to 'None'
+[0.917s] Level 5:colcon.colcon_core.verb:set package 'joint_control' build argument 'catkin_cmake_args' from command line to 'None'
+[0.917s] Level 5:colcon.colcon_core.verb:set package 'joint_control' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.917s] DEBUG:colcon.colcon_core.verb:Building package 'joint_control' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab3/build/joint_control', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab3/install/joint_control', 'merge_install': False, 'path': '/home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab3/src/joint_control', 'symlink_install': False, 'test_result_base': None}
+[0.917s] Level 5:colcon.colcon_core.verb:set package 'straight_line_interface' build argument 'cmake_args' from command line to 'None'
+[0.917s] Level 5:colcon.colcon_core.verb:set package 'straight_line_interface' build argument 'cmake_target' from command line to 'None'
+[0.917s] Level 5:colcon.colcon_core.verb:set package 'straight_line_interface' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.917s] Level 5:colcon.colcon_core.verb:set package 'straight_line_interface' build argument 'cmake_clean_cache' from command line to 'False'
+[0.917s] Level 5:colcon.colcon_core.verb:set package 'straight_line_interface' build argument 'cmake_clean_first' from command line to 'False'
+[0.917s] Level 5:colcon.colcon_core.verb:set package 'straight_line_interface' build argument 'cmake_force_configure' from command line to 'False'
+[0.917s] Level 5:colcon.colcon_core.verb:set package 'straight_line_interface' build argument 'ament_cmake_args' from command line to 'None'
+[0.917s] Level 5:colcon.colcon_core.verb:set package 'straight_line_interface' build argument 'catkin_cmake_args' from command line to 'None'
+[0.917s] Level 5:colcon.colcon_core.verb:set package 'straight_line_interface' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.917s] DEBUG:colcon.colcon_core.verb:Building package 'straight_line_interface' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab3/build/straight_line_interface', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab3/install/straight_line_interface', 'merge_install': False, 'path': '/home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab3/src/straight_line_interface', 'symlink_install': False, 'test_result_base': None}
+[0.918s] Level 5:colcon.colcon_core.verb:set package 'tf_listener' build argument 'cmake_args' from command line to 'None'
+[0.918s] Level 5:colcon.colcon_core.verb:set package 'tf_listener' build argument 'cmake_target' from command line to 'None'
+[0.918s] Level 5:colcon.colcon_core.verb:set package 'tf_listener' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.918s] Level 5:colcon.colcon_core.verb:set package 'tf_listener' build argument 'cmake_clean_cache' from command line to 'False'
+[0.918s] Level 5:colcon.colcon_core.verb:set package 'tf_listener' build argument 'cmake_clean_first' from command line to 'False'
+[0.918s] Level 5:colcon.colcon_core.verb:set package 'tf_listener' build argument 'cmake_force_configure' from command line to 'False'
+[0.918s] Level 5:colcon.colcon_core.verb:set package 'tf_listener' build argument 'ament_cmake_args' from command line to 'None'
+[0.918s] Level 5:colcon.colcon_core.verb:set package 'tf_listener' build argument 'catkin_cmake_args' from command line to 'None'
+[0.918s] Level 5:colcon.colcon_core.verb:set package 'tf_listener' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.918s] DEBUG:colcon.colcon_core.verb:Building package 'tf_listener' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab3/build/tf_listener', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab3/install/tf_listener', 'merge_install': False, 'path': '/home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab3/src/tf_listener', 'symlink_install': False, 'test_result_base': None}
+[0.918s] Level 5:colcon.colcon_core.verb:set package 'straight_line' build argument 'cmake_args' from command line to 'None'
+[0.918s] Level 5:colcon.colcon_core.verb:set package 'straight_line' build argument 'cmake_target' from command line to 'None'
+[0.918s] Level 5:colcon.colcon_core.verb:set package 'straight_line' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.918s] Level 5:colcon.colcon_core.verb:set package 'straight_line' build argument 'cmake_clean_cache' from command line to 'False'
+[0.918s] Level 5:colcon.colcon_core.verb:set package 'straight_line' build argument 'cmake_clean_first' from command line to 'False'
+[0.918s] Level 5:colcon.colcon_core.verb:set package 'straight_line' build argument 'cmake_force_configure' from command line to 'False'
+[0.918s] Level 5:colcon.colcon_core.verb:set package 'straight_line' build argument 'ament_cmake_args' from command line to 'None'
+[0.918s] Level 5:colcon.colcon_core.verb:set package 'straight_line' build argument 'catkin_cmake_args' from command line to 'None'
+[0.918s] Level 5:colcon.colcon_core.verb:set package 'straight_line' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.918s] DEBUG:colcon.colcon_core.verb:Building package 'straight_line' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab3/build/straight_line', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab3/install/straight_line', 'merge_install': False, 'path': '/home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab3/src/straight_line', 'symlink_install': False, 'test_result_base': None}
+[0.918s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.919s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.919s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab3/src/straight_line_interface' with build type 'ament_cmake'
+[0.919s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab3/src/straight_line_interface'
+[0.923s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.924s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.924s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.935s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab3/src/forward_kinematics' with build type 'ament_python'
+[0.935s] Level 1:colcon.colcon_core.shell:create_environment_hook('forward_kinematics', 'ament_prefix_path')
+[0.936s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab3/install/forward_kinematics/share/forward_kinematics/hook/ament_prefix_path.ps1'
+[0.941s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab3/install/forward_kinematics/share/forward_kinematics/hook/ament_prefix_path.dsv'
+[0.944s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab3/install/forward_kinematics/share/forward_kinematics/hook/ament_prefix_path.sh'
+[0.948s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.948s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.958s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab3/src/joint_control' with build type 'ament_python'
+[0.959s] Level 1:colcon.colcon_core.shell:create_environment_hook('joint_control', 'ament_prefix_path')
+[0.959s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab3/install/joint_control/share/joint_control/hook/ament_prefix_path.ps1'
+[0.965s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab3/install/joint_control/share/joint_control/hook/ament_prefix_path.dsv'
+[0.969s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab3/install/joint_control/share/joint_control/hook/ament_prefix_path.sh'
+[0.973s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.973s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.986s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab3/src/tf_listener' with build type 'ament_python'
+[0.987s] Level 1:colcon.colcon_core.shell:create_environment_hook('tf_listener', 'ament_prefix_path')
+[0.987s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab3/install/tf_listener/share/tf_listener/hook/ament_prefix_path.ps1'
+[0.993s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab3/install/tf_listener/share/tf_listener/hook/ament_prefix_path.dsv'
+[0.997s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab3/install/tf_listener/share/tf_listener/hook/ament_prefix_path.sh'
+[1.001s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.001s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.041s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab3/build/straight_line_interface': CMAKE_PREFIX_PATH=/home/ff/ee106a/robot_workspaces/ur/install/ur7e_utils:/opt/ros/humble /usr/bin/cmake --build /home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab3/build/straight_line_interface -- -j32 -l32
+[3.266s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab3/src/forward_kinematics'
+[3.266s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[3.266s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[3.528s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab3/src/joint_control'
+[3.528s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[3.528s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[3.800s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab3/src/tf_listener'
+[3.800s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[3.800s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[3.835s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab3/build/straight_line_interface' returned '0': CMAKE_PREFIX_PATH=/home/ff/ee106a/robot_workspaces/ur/install/ur7e_utils:/opt/ros/humble /usr/bin/cmake --build /home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab3/build/straight_line_interface -- -j32 -l32
+[3.868s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab3/build/straight_line_interface': CMAKE_PREFIX_PATH=/home/ff/ee106a/robot_workspaces/ur/install/ur7e_utils:/opt/ros/humble /usr/bin/cmake --install /home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab3/build/straight_line_interface
+[4.391s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(straight_line_interface)
+[4.392s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab3/build/straight_line_interface' returned '0': CMAKE_PREFIX_PATH=/home/ff/ee106a/robot_workspaces/ur/install/ur7e_utils:/opt/ros/humble /usr/bin/cmake --install /home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab3/build/straight_line_interface
+[4.439s] Level 1:colcon.colcon_core.environment:checking '/home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab3/install/straight_line_interface' for CMake module files
+[4.444s] Level 1:colcon.colcon_core.environment:checking '/home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab3/install/straight_line_interface' for CMake config files
+[4.455s] Level 1:colcon.colcon_core.shell:create_environment_hook('straight_line_interface', 'cmake_prefix_path')
+[4.455s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab3/install/straight_line_interface/share/straight_line_interface/hook/cmake_prefix_path.ps1'
+[4.458s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab3/install/straight_line_interface/share/straight_line_interface/hook/cmake_prefix_path.dsv'
+[4.462s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab3/install/straight_line_interface/share/straight_line_interface/hook/cmake_prefix_path.sh'
+[4.465s] Level 1:colcon.colcon_core.environment:checking '/home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab3/install/straight_line_interface/lib'
+[4.466s] Level 1:colcon.colcon_core.shell:create_environment_hook('straight_line_interface', 'ld_library_path_lib')
+[4.466s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab3/install/straight_line_interface/share/straight_line_interface/hook/ld_library_path_lib.ps1'
+[4.469s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab3/install/straight_line_interface/share/straight_line_interface/hook/ld_library_path_lib.dsv'
+[4.472s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab3/install/straight_line_interface/share/straight_line_interface/hook/ld_library_path_lib.sh'
+[4.475s] Level 1:colcon.colcon_core.environment:checking '/home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab3/install/straight_line_interface/bin'
+[4.475s] Level 1:colcon.colcon_core.environment:checking '/home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab3/install/straight_line_interface/lib/pkgconfig/straight_line_interface.pc'
+[4.475s] Level 1:colcon.colcon_core.environment:checking '/home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab3/install/straight_line_interface/lib/python3.10/site-packages'
+[4.476s] Level 1:colcon.colcon_core.environment:checking '/home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab3/install/straight_line_interface/bin'
+[4.476s] INFO:colcon.colcon_core.shell:Creating package script '/home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab3/install/straight_line_interface/share/straight_line_interface/package.ps1'
+[4.480s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab3/install/straight_line_interface/share/straight_line_interface/package.dsv'
+[4.483s] INFO:colcon.colcon_core.shell:Creating package script '/home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab3/install/straight_line_interface/share/straight_line_interface/package.sh'
+[4.487s] INFO:colcon.colcon_core.shell:Creating package script '/home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab3/install/straight_line_interface/share/straight_line_interface/package.bash'
+[4.491s] INFO:colcon.colcon_core.shell:Creating package script '/home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab3/install/straight_line_interface/share/straight_line_interface/package.zsh'
+[4.495s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab3/install/straight_line_interface/share/colcon-core/packages/straight_line_interface)
+[4.499s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(straight_line_interface)
+[4.499s] Level 1:colcon.colcon_core.environment:checking '/home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab3/install/straight_line_interface' for CMake module files
+[4.502s] Level 1:colcon.colcon_core.environment:checking '/home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab3/install/straight_line_interface' for CMake config files
+[4.508s] Level 1:colcon.colcon_core.shell:create_environment_hook('straight_line_interface', 'cmake_prefix_path')
+[4.509s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab3/install/straight_line_interface/share/straight_line_interface/hook/cmake_prefix_path.ps1'
+[4.512s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab3/install/straight_line_interface/share/straight_line_interface/hook/cmake_prefix_path.dsv'
+[4.516s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab3/install/straight_line_interface/share/straight_line_interface/hook/cmake_prefix_path.sh'
+[4.519s] Level 1:colcon.colcon_core.environment:checking '/home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab3/install/straight_line_interface/lib'
+[4.520s] Level 1:colcon.colcon_core.shell:create_environment_hook('straight_line_interface', 'ld_library_path_lib')
+[4.520s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab3/install/straight_line_interface/share/straight_line_interface/hook/ld_library_path_lib.ps1'
+[4.523s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab3/install/straight_line_interface/share/straight_line_interface/hook/ld_library_path_lib.dsv'
+[4.527s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab3/install/straight_line_interface/share/straight_line_interface/hook/ld_library_path_lib.sh'
+[4.530s] Level 1:colcon.colcon_core.environment:checking '/home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab3/install/straight_line_interface/bin'
+[4.530s] Level 1:colcon.colcon_core.environment:checking '/home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab3/install/straight_line_interface/lib/pkgconfig/straight_line_interface.pc'
+[4.530s] Level 1:colcon.colcon_core.environment:checking '/home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab3/install/straight_line_interface/lib/python3.10/site-packages'
+[4.531s] Level 1:colcon.colcon_core.environment:checking '/home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab3/install/straight_line_interface/bin'
+[4.532s] INFO:colcon.colcon_core.shell:Creating package script '/home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab3/install/straight_line_interface/share/straight_line_interface/package.ps1'
+[4.535s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab3/install/straight_line_interface/share/straight_line_interface/package.dsv'
+[4.539s] INFO:colcon.colcon_core.shell:Creating package script '/home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab3/install/straight_line_interface/share/straight_line_interface/package.sh'
+[4.542s] INFO:colcon.colcon_core.shell:Creating package script '/home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab3/install/straight_line_interface/share/straight_line_interface/package.bash'
+[4.546s] INFO:colcon.colcon_core.shell:Creating package script '/home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab3/install/straight_line_interface/share/straight_line_interface/package.zsh'
+[4.549s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab3/install/straight_line_interface/share/colcon-core/packages/straight_line_interface)
+[4.552s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab3/src/straight_line' with build type 'ament_python'
+[4.553s] Level 1:colcon.colcon_core.shell:create_environment_hook('straight_line', 'ament_prefix_path')
+[4.553s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab3/install/straight_line/share/straight_line/hook/ament_prefix_path.ps1'
+[4.560s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab3/install/straight_line/share/straight_line/hook/ament_prefix_path.dsv'
+[4.564s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab3/install/straight_line/share/straight_line/hook/ament_prefix_path.sh'
+[4.569s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[4.569s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[4.588s] DEBUG:colcon.colcon_core.task.python.build:Available setuptools commands: setopt, sdist, install, symlink_data, bdist_egg, install_egg_info, rotate, saveopts, build_clib, test, build_ext, easy_install, upload, register, build_scripts, install_scripts, dist_info, install_data, init_catalog, build, bdist_dumb, compile_catalog, alias, update_catalog, bdist_rpm, develop, clean, egg_info, build_py, bdist, bdist_wheel, check, upload_docs, install_lib, extract_messages, install_headers
+[4.596s] DEBUG:colcon.colcon_core.task.python.build:Available setuptools commands: setopt, sdist, install, symlink_data, bdist_egg, install_egg_info, rotate, saveopts, build_clib, test, build_ext, easy_install, upload, register, build_scripts, install_scripts, dist_info, install_data, init_catalog, build, bdist_dumb, compile_catalog, alias, update_catalog, bdist_rpm, develop, clean, egg_info, build_py, bdist, bdist_wheel, check, upload_docs, install_lib, extract_messages, install_headers
+[4.601s] DEBUG:colcon.colcon_core.task.python.build:Available setuptools commands: setopt, sdist, install, symlink_data, bdist_egg, install_egg_info, rotate, saveopts, build_clib, test, build_ext, easy_install, upload, register, build_scripts, install_scripts, dist_info, install_data, init_catalog, build, bdist_dumb, compile_catalog, alias, update_catalog, bdist_rpm, develop, clean, egg_info, build_py, bdist, bdist_wheel, check, upload_docs, install_lib, extract_messages, install_headers
+[4.611s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab3/src/tf_listener': PYTHONPATH=/home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab3/build/tf_listener/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab3/install/tf_listener/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/tf_listener build --build-base /home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab3/build/tf_listener/build install --record /home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab3/build/tf_listener/install.log --install-scripts $base/lib/tf_listener --single-version-externally-managed install_data
+[4.620s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab3/src/joint_control': PYTHONPATH=/home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab3/build/joint_control/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab3/install/joint_control/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/joint_control build --build-base /home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab3/build/joint_control/build install --record /home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab3/build/joint_control/install.log --install-scripts $base/lib/joint_control --single-version-externally-managed install_data
+[4.634s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab3/src/forward_kinematics': PYTHONPATH=/home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab3/build/forward_kinematics/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab3/install/forward_kinematics/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/forward_kinematics build --build-base /home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab3/build/forward_kinematics/build install --record /home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab3/build/forward_kinematics/install.log --install-scripts $base/lib/forward_kinematics --single-version-externally-managed install_data
+[4.839s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab3/src/straight_line'
+[4.839s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[4.839s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[4.935s] Level 1:colcon.colcon_core.environment:checking '/home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab3/install/tf_listener' for CMake module files
+[4.936s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab3/src/tf_listener' returned '0': PYTHONPATH=/home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab3/build/tf_listener/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab3/install/tf_listener/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/tf_listener build --build-base /home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab3/build/tf_listener/build install --record /home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab3/build/tf_listener/install.log --install-scripts $base/lib/tf_listener --single-version-externally-managed install_data
+[4.940s] Level 1:colcon.colcon_core.environment:checking '/home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab3/install/tf_listener' for CMake config files
+[4.949s] Level 1:colcon.colcon_core.environment:checking '/home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab3/install/tf_listener/lib'
+[4.949s] Level 1:colcon.colcon_core.environment:checking '/home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab3/install/tf_listener/bin'
+[4.950s] Level 1:colcon.colcon_core.environment:checking '/home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab3/install/tf_listener/lib/pkgconfig/tf_listener.pc'
+[4.950s] Level 1:colcon.colcon_core.environment:checking '/home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab3/install/tf_listener/lib/python3.10/site-packages'
+[4.950s] Level 1:colcon.colcon_core.shell:create_environment_hook('tf_listener', 'pythonpath')
+[4.950s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab3/install/tf_listener/share/tf_listener/hook/pythonpath.ps1'
+[4.953s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab3/install/tf_listener/share/tf_listener/hook/pythonpath.dsv'
+[4.956s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab3/install/tf_listener/share/tf_listener/hook/pythonpath.sh'
+[4.959s] Level 1:colcon.colcon_core.environment:checking '/home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab3/install/tf_listener/bin'
+[4.959s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(tf_listener)
+[4.959s] INFO:colcon.colcon_core.shell:Creating package script '/home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab3/install/tf_listener/share/tf_listener/package.ps1'
+[4.963s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab3/install/tf_listener/share/tf_listener/package.dsv'
+[4.966s] INFO:colcon.colcon_core.shell:Creating package script '/home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab3/install/tf_listener/share/tf_listener/package.sh'
+[4.968s] INFO:colcon.colcon_core.shell:Creating package script '/home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab3/install/tf_listener/share/tf_listener/package.bash'
+[4.971s] INFO:colcon.colcon_core.shell:Creating package script '/home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab3/install/tf_listener/share/tf_listener/package.zsh'
+[4.974s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab3/install/tf_listener/share/colcon-core/packages/tf_listener)
+[4.977s] Level 1:colcon.colcon_core.environment:checking '/home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab3/install/forward_kinematics' for CMake module files
+[4.980s] Level 1:colcon.colcon_core.environment:checking '/home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab3/install/forward_kinematics' for CMake config files
+[4.985s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab3/src/forward_kinematics' returned '0': PYTHONPATH=/home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab3/build/forward_kinematics/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab3/install/forward_kinematics/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/forward_kinematics build --build-base /home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab3/build/forward_kinematics/build install --record /home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab3/build/forward_kinematics/install.log --install-scripts $base/lib/forward_kinematics --single-version-externally-managed install_data
+[4.991s] Level 1:colcon.colcon_core.environment:checking '/home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab3/install/forward_kinematics/lib'
+[4.991s] Level 1:colcon.colcon_core.environment:checking '/home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab3/install/forward_kinematics/bin'
+[4.992s] Level 1:colcon.colcon_core.environment:checking '/home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab3/install/forward_kinematics/lib/pkgconfig/forward_kinematics.pc'
+[4.992s] Level 1:colcon.colcon_core.environment:checking '/home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab3/install/forward_kinematics/lib/python3.10/site-packages'
+[4.992s] Level 1:colcon.colcon_core.shell:create_environment_hook('forward_kinematics', 'pythonpath')
+[4.992s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab3/install/forward_kinematics/share/forward_kinematics/hook/pythonpath.ps1'
+[4.995s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab3/install/forward_kinematics/share/forward_kinematics/hook/pythonpath.dsv'
+[4.998s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab3/install/forward_kinematics/share/forward_kinematics/hook/pythonpath.sh'
+[5.002s] Level 1:colcon.colcon_core.environment:checking '/home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab3/install/forward_kinematics/bin'
+[5.002s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(forward_kinematics)
+[5.003s] INFO:colcon.colcon_core.shell:Creating package script '/home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab3/install/forward_kinematics/share/forward_kinematics/package.ps1'
+[5.007s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab3/install/forward_kinematics/share/forward_kinematics/package.dsv'
+[5.011s] INFO:colcon.colcon_core.shell:Creating package script '/home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab3/install/forward_kinematics/share/forward_kinematics/package.sh'
+[5.014s] INFO:colcon.colcon_core.shell:Creating package script '/home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab3/install/forward_kinematics/share/forward_kinematics/package.bash'
+[5.017s] INFO:colcon.colcon_core.shell:Creating package script '/home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab3/install/forward_kinematics/share/forward_kinematics/package.zsh'
+[5.020s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab3/install/forward_kinematics/share/colcon-core/packages/forward_kinematics)
+[5.023s] Level 1:colcon.colcon_core.environment:checking '/home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab3/install/joint_control' for CMake module files
+[5.027s] Level 1:colcon.colcon_core.environment:checking '/home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab3/install/joint_control' for CMake config files
+[5.030s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab3/src/joint_control' returned '0': PYTHONPATH=/home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab3/build/joint_control/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab3/install/joint_control/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/joint_control build --build-base /home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab3/build/joint_control/build install --record /home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab3/build/joint_control/install.log --install-scripts $base/lib/joint_control --single-version-externally-managed install_data
+[5.036s] Level 1:colcon.colcon_core.environment:checking '/home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab3/install/joint_control/lib'
+[5.036s] Level 1:colcon.colcon_core.environment:checking '/home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab3/install/joint_control/bin'
+[5.037s] Level 1:colcon.colcon_core.environment:checking '/home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab3/install/joint_control/lib/pkgconfig/joint_control.pc'
+[5.037s] Level 1:colcon.colcon_core.environment:checking '/home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab3/install/joint_control/lib/python3.10/site-packages'
+[5.037s] Level 1:colcon.colcon_core.shell:create_environment_hook('joint_control', 'pythonpath')
+[5.037s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab3/install/joint_control/share/joint_control/hook/pythonpath.ps1'
+[5.040s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab3/install/joint_control/share/joint_control/hook/pythonpath.dsv'
+[5.043s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab3/install/joint_control/share/joint_control/hook/pythonpath.sh'
+[5.046s] Level 1:colcon.colcon_core.environment:checking '/home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab3/install/joint_control/bin'
+[5.046s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(joint_control)
+[5.046s] INFO:colcon.colcon_core.shell:Creating package script '/home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab3/install/joint_control/share/joint_control/package.ps1'
+[5.049s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab3/install/joint_control/share/joint_control/package.dsv'
+[5.052s] INFO:colcon.colcon_core.shell:Creating package script '/home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab3/install/joint_control/share/joint_control/package.sh'
+[5.054s] INFO:colcon.colcon_core.shell:Creating package script '/home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab3/install/joint_control/share/joint_control/package.bash'
+[5.057s] INFO:colcon.colcon_core.shell:Creating package script '/home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab3/install/joint_control/share/joint_control/package.zsh'
+[5.060s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab3/install/joint_control/share/colcon-core/packages/joint_control)
+[5.203s] DEBUG:colcon.colcon_core.task.python.build:Available setuptools commands: setopt, sdist, install, symlink_data, bdist_egg, install_egg_info, rotate, saveopts, build_clib, test, build_ext, easy_install, upload, register, build_scripts, install_scripts, dist_info, install_data, init_catalog, build, bdist_dumb, compile_catalog, alias, update_catalog, bdist_rpm, develop, clean, egg_info, build_py, bdist, bdist_wheel, check, upload_docs, install_lib, extract_messages, install_headers
+[5.219s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab3/src/straight_line': AMENT_PREFIX_PATH=/home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab3/install/straight_line_interface:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab3/install/straight_line_interface LD_LIBRARY_PATH=/home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab3/install/straight_line_interface/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab3/build/straight_line/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab3/install/straight_line/lib/python3.10/site-packages:/home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab3/install/straight_line_interface/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/straight_line build --build-base /home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab3/build/straight_line/build install --record /home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab3/build/straight_line/install.log --install-scripts $base/lib/straight_line --single-version-externally-managed install_data
+[5.616s] Level 1:colcon.colcon_core.environment:checking '/home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab3/install/straight_line' for CMake module files
+[5.616s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab3/src/straight_line' returned '0': AMENT_PREFIX_PATH=/home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab3/install/straight_line_interface:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab3/install/straight_line_interface LD_LIBRARY_PATH=/home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab3/install/straight_line_interface/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab3/build/straight_line/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab3/install/straight_line/lib/python3.10/site-packages:/home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab3/install/straight_line_interface/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/straight_line build --build-base /home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab3/build/straight_line/build install --record /home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab3/build/straight_line/install.log --install-scripts $base/lib/straight_line --single-version-externally-managed install_data
+[5.620s] Level 1:colcon.colcon_core.environment:checking '/home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab3/install/straight_line' for CMake config files
+[5.630s] Level 1:colcon.colcon_core.environment:checking '/home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab3/install/straight_line/lib'
+[5.631s] Level 1:colcon.colcon_core.environment:checking '/home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab3/install/straight_line/bin'
+[5.631s] Level 1:colcon.colcon_core.environment:checking '/home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab3/install/straight_line/lib/pkgconfig/straight_line.pc'
+[5.631s] Level 1:colcon.colcon_core.environment:checking '/home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab3/install/straight_line/lib/python3.10/site-packages'
+[5.631s] Level 1:colcon.colcon_core.shell:create_environment_hook('straight_line', 'pythonpath')
+[5.632s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab3/install/straight_line/share/straight_line/hook/pythonpath.ps1'
+[5.635s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab3/install/straight_line/share/straight_line/hook/pythonpath.dsv'
+[5.639s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab3/install/straight_line/share/straight_line/hook/pythonpath.sh'
+[5.643s] Level 1:colcon.colcon_core.environment:checking '/home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab3/install/straight_line/bin'
+[5.643s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(straight_line)
+[5.644s] INFO:colcon.colcon_core.shell:Creating package script '/home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab3/install/straight_line/share/straight_line/package.ps1'
+[5.648s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab3/install/straight_line/share/straight_line/package.dsv'
+[5.652s] INFO:colcon.colcon_core.shell:Creating package script '/home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab3/install/straight_line/share/straight_line/package.sh'
+[5.656s] INFO:colcon.colcon_core.shell:Creating package script '/home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab3/install/straight_line/share/straight_line/package.bash'
+[5.659s] INFO:colcon.colcon_core.shell:Creating package script '/home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab3/install/straight_line/share/straight_line/package.zsh'
+[5.663s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab3/install/straight_line/share/colcon-core/packages/straight_line)
+[5.666s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[5.666s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[5.666s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[5.666s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[5.714s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.notify_send': Could not find 'notify-send'
+[5.714s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[5.715s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[5.715s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[5.838s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[5.838s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab3/install/local_setup.ps1'
+[5.843s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab3/install/_local_setup_util_ps1.py'
+[5.848s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab3/install/setup.ps1'
+[5.853s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab3/install/local_setup.sh'
+[5.857s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab3/install/_local_setup_util_sh.py'
+[5.861s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab3/install/setup.sh'
+[5.865s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab3/install/local_setup.bash'
+[5.869s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab3/install/setup.bash'
+[5.873s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab3/install/local_setup.zsh'
+[5.878s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/cc/ee106a/fa26/class/ee106a-act/ros_workspaces/lab3/install/setup.zsh'

@@ -1,10 +1,13 @@
 #!/usr/bin/env python3
 
+import numpy as np
 import sys
 
 import rclpy
 from rclpy.node import Node
 from trajectory_msgs.msg import JointTrajectory, JointTrajectoryPoint
+
+from builtin_interfaces.msg import Duration
 
 
 class JointController(Node):
@@ -31,9 +34,18 @@ class JointController(Node):
         self.publish_trajectory()
 
     def publish_trajectory(self):
-        # YOUR CODE HERE
-        pass
+        msg = JointTrajectory()
+        msg.joint_names = self.joint_names
+        pts = JointTrajectoryPoint()
 
+        pts.positions = self.joint_angles
+
+        pts.velocities = np.zeros(6).tolist()
+        pts.time_from_start = Duration(sec=5)
+
+        msg.points = [pts]
+
+        self.publisher.publish(msg)
 
 def main(args=None):
     if len(sys.argv) != 7:

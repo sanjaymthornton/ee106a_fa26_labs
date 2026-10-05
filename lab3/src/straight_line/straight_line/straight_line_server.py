@@ -16,6 +16,7 @@ from moveit_msgs.srv import GetCartesianPath
 from tf2_ros import Buffer, TransformException, TransformListener
 
 from straight_line_interface.action import MoveStraight
+import numpy as np
 
 class StraightLineServer(Node):
     def __init__(self):
@@ -100,8 +101,11 @@ class StraightLineServer(Node):
         
         req = SwitchController.Request()
         # TODO: fill in `req`
-        req.activate_controllers = 'scaled_joint_trajectory_controller'
+        req.activate_controllers = ['scaled_joint_trajectory_controller']
         req.deactivate_controllers = ['freedrive_mode_controller', 'forward_position_controller', 'forward_velocity_controller']
+        req.strictness = SwitchController.Request.BEST_EFFORT
+        req.start_asap = True
+        req.timeout = Duration(seconds=5.0).to_msg()
         
         future = self._switch_cli.call_async(req)
         if not self._wait_future(future, timeout_sec=10.0):
@@ -189,7 +193,8 @@ class StraightLineServer(Node):
             return False, 'FollowJointTrajectory action server unavailable'
 
         # TODO: construct the correct goal message for the FollowJointTrajectory action.
-        goal = FollowJointTrajectory()
+        goal = FollowJointTrajectory.Goal()
+        goal.trajectory = traj
         
         send_future = self._exec_ac.send_goal_async(goal)
         if not self._wait_future(send_future, timeout_sec=10.0):
@@ -203,7 +208,11 @@ class StraightLineServer(Node):
         while rclpy.ok() and not result_future.done():
             # TODO: monitor `goal_handle.is_cancel_requested`.
             # if a cancellation was requested, use exec_handle to cancel the goal.
-            ...
+            if goal_handle.is_cancel_requested:
+                exec_handle.cancel_goal_async()
+                return False, 'No trajectory goal'
+
+            time.sleep(1)
         
         try:
             result_future.result()
@@ -253,13 +262,18 @@ class StraightLineServer(Node):
             # TODO: handle this issue! what should we do if this
             # lookup fails?  hint: look at how we dealt with a failure
             # of _ensure_controller() above.
-            ...
+            result.success = False
+            result.message = f"Couldn't find tool0 pose: {exc}"
+            goal_handle.abort()
+            return result
 
         target_pose = Pose()
         target_pose.position = goal.target.position
         target_pose.orientation = start_pose.orientation
         # TODO: update dist_to_go based on the above information!
-        result.dist_to_go = ...
+        result.dist_to_go = float(np.linalg.norm(np.array([target_pose.position.x - start_pose.position.x,
+                                                           target_pose.position.y - start_pose.position.y,
+                                                           target_pose.position.z - start_pose.position.z])))
 
 
         ########## STEP 3 ##########
@@ -290,10 +304,16 @@ class StraightLineServer(Node):
         feedback.planned_fraction = planned_fraction
 
         if traj is None:
-            ... # TODO: handle total planning failure
+            result.success = False
+            result.message = "Failed Cartesian planning"
+            goal_handle.abort()
+            return result
 
         if planned_fraction < 0.999:
-            ... # TODO: handle partial plannnig failure (it got stuck halfway ig)
+            result.success = False
+            result.message = "Only partially did the Cartesian planning"
+            goal_handle.abort()
+            return result
 
         ########## STEP 4 ##########
         # execute the plan!
@@ -310,7 +330,7 @@ class StraightLineServer(Node):
 
         # get end pose so we can return how far we got
         current_pose = self._lookup_tool0_pose()
-        result.dist_to_go = ... # TODO: get distance to target
+        result.dist_to_go = float(np.linalg.norm(np.array([current_pose.position.x, current_pose.position.y, current_pose.position.z])))
   
         if not ok:
             result.success = False
