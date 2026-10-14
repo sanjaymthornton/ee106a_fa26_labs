@@ -26,8 +26,20 @@ class ConstantTransformPublisher(Node):
         # ------------------------------------------
 
         # Convert rotation matrix to quaternion (x, y, z, w)
+        rot = G[0:3, 0:3]
+        translation = G[0:3, 3]
+        q = R.from_matrix(rot).as_quat()
 
         # Populate TransformStamped
+        self.transform.transform.rotation.x = q[0]
+        self.transform.transform.rotation.y = q[1]
+        self.transform.transform.rotation.z = q[2]
+        self.transform.transform.rotation.w = q[3]
+        self.transform.transform.translation.x = translation[0]
+        self.transform.transform.translation.y = translation[1]
+        self.transform.transform.translation.z = translation[2]
+        self.transform.header.frame_id = 'wrist_3_link'
+        self.transform.child_frame_id = 'camera_depth_optical_frame'
 
         self.get_logger().info(f"Broadcasting transform:\n{G}\nQuaternion: {q}")
 
