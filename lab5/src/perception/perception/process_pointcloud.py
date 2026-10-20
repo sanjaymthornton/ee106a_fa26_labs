@@ -24,8 +24,8 @@ class RealSensePCSubscriber(Node):
         self.target_frame = self.declare_parameter('target_frame', 'base_link').value
         self.max_y = float(self.declare_parameter('max_y', 0.79).value)
 
-        self.min_z = float(self.declare_parameter('min_z', -0.18).value)
-        self.max_z = float(self.declare_parameter('max_z', -0.15).value)
+        self.min_z = float(self.declare_parameter('min_z', -0.155).value)
+        self.max_z = float(self.declare_parameter('max_z', -0.09).value)
 
         self.bounds_pub = self.create_publisher(MarkerArray, '/filter_planes', 1)
 
@@ -103,9 +103,15 @@ class RealSensePCSubscriber(Node):
 
         # TODO: Create masks based on the specified min, max y and z parameters above in order to filter points
         # TODO (Part 5): the cube is black, so once you have hsv, also only keep points with V <= self.cube_max_v
-        filtered_points = np.array([pt for pt in points_base if pt[1] <= self.max_y 
-                                    and self.min_z <= pt[2] <= self.max_z], 
-                                    dtype=np.float32).reshape(-1, 3)
+        if hsv is None:
+            filtered_points = np.array([pt for pt in points_base if pt[1] <= self.max_y 
+                                        and self.min_z <= pt[2] <= self.max_z], 
+                                        dtype=np.float32).reshape(-1, 3)
+        else:
+            filtered_points = np.array([pt for pt, c in zip(points_base, hsv) if pt[1] <= self.max_y 
+                                        and self.min_z <= pt[2] <= self.max_z
+                                        and c[2] <= self.cube_max_v], 
+                                        dtype=np.float32).reshape(-1, 3)
 
         if filtered_points.size == 0:
             self.get_logger().warn(
@@ -131,7 +137,7 @@ class RealSensePCSubscriber(Node):
         cube_top = np.percentile([pt[2] for pt in filtered_points], 95)
         table_z = float(np.median([pt[2] for pt in points_base if 
                            TABLE_RING_MIN <= np.hypot(pt[0] - cube_x, pt[1] - cube_y) <= TABLE_RING_MAX]
-                         ))
+                        ))
 
         cube_height = cube_top - table_z
         cube_z = table_z + cube_height / 2  # middle of the cube

@@ -98,7 +98,7 @@ class UR7e_CubeGrasp(Node):
         The fingertips should start PRE_GRASP_CLEARANCE above the top of the cube.
         Remember the IK target is wrist_3_link, which is GRIPPER_LENGTH above the fingertips.
         '''
-        ...
+        
         self.job_queue.append(...)
 
         # 2) Move to Grasp Position (lower the gripper to the cube)
