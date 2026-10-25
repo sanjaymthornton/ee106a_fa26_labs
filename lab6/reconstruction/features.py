@@ -28,7 +28,7 @@ class Features:
 
 def detect_sift(image, K, dist, n_features=4000):
     gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
-
+    gray[:280, :] = 0 # Black out rows 0 to 279 before SIFT
     # TODO 3.1: make a SIFT detector (at most n_features keypoints) and run
     # detectAndCompute on gray with no mask.
     # https://docs.opencv.org/4.x/da/df5/tutorial_py_sift_intro.html
@@ -62,12 +62,12 @@ def ratio_test(desc_a, desc_b, ratio=0.75):
     # the second closest. (sometimes you only get one back, watch out for that)
     return_dict = {}
     matches = matcher.knnMatch(desc_a, desc_b, k=2)
-    if len(matches) == 1:
-        return {matches[0].queryIdx: matches[0].trainIdx}
-    else:
-        for i in range(len(matches) - 1):
-            match1 = matches[i]
-            match2 = matches[i + 1]
+
+    for match_group in matches:
+        if len(match_group) == 1:
+            return {matches[0].queryIdx: matches[0].trainIdx}
+        elif len(match_group) == 2:
+            match1, match2 = match_group
             if match1.distance < ratio * match2.distance:
                 return_dict[match1.queryIdx] = match1.trainIdx 
     return return_dict

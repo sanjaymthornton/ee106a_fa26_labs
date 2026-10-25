@@ -28,16 +28,19 @@ def world_to_camera(T_map_cam):
     # returns R, t such that X_cam = R X_map + t
     # TODO 6.1: T_map_cam goes from camera to map, so you need the inverse.
     # if its rotation is R_mc and the camera center is c, then R = R_mc^T and t = -R c
-    raise NotImplementedError('TODO 6.1')
-
+    T_not_map_cam = np.linalg.inv(T_map_cam)
+    return T_not_map_cam[:3, :3].T, -T_not_map_cam[:3, :3].T @ T_not_map_cam[:3, 3]
 
 def reprojection_errors(K, R, t, X, uv):
     # pixel distance between X (N, 3) projected into the camera and the observed uv (N, 2)
     # TODO 6.2: turn R into a rotation vector with cv2.Rodrigues, then project
     # with cv2.projectPoints. use np.zeros(5) for the distortion since uv is
     # already undistorted
-    raise NotImplementedError('TODO 6.2')
-
+    rot, _ = cv2.Rodrigues(R)
+    X = X.astype(np.float32)
+    proj, _ = cv2.projectPoints(X, rot, t, K, np.zeros(5, dtype=np.float32))
+    proj = proj.reshape(-1, 2)
+    return np.linalg.norm(proj - uv, axis=1)
 
 def triangulate_multiview(Ps, uv):
     # same DLT as two-view, just two rows per image instead of two images
