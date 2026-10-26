@@ -28,8 +28,7 @@ def world_to_camera(T_map_cam):
     # returns R, t such that X_cam = R X_map + t
     # TODO 6.1: T_map_cam goes from camera to map, so you need the inverse.
     # if its rotation is R_mc and the camera center is c, then R = R_mc^T and t = -R c
-    T_not_map_cam = np.linalg.inv(T_map_cam)
-    return T_not_map_cam[:3, :3].T, -T_not_map_cam[:3, :3].T @ T_not_map_cam[:3, 3]
+    return T_map_cam[:3, :3].T, -T_map_cam[:3, :3].T @ T_map_cam[:3, 3]
 
 def reprojection_errors(K, R, t, X, uv):
     # pixel distance between X (N, 3) projected into the camera and the observed uv (N, 2)
