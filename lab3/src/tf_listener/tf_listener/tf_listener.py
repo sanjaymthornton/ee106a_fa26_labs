@@ -6,15 +6,24 @@ import rclpy
 import tf2_ros
 from geometry_msgs.msg import TransformStamped
 from rclpy.node import Node
+<<<<<<< HEAD
 from tf2_ros import LookupException, ConnectivityException, ExtrapolationException
+=======
+>>>>>>> 91e9905d51ec75d63956fe136b2e097e7a95d076
 
 
 class TfEchoNode(Node):
     def __init__(self, target_frame, source_frame):
         super().__init__("tf_echo_node")
 
+<<<<<<< HEAD
         self.tf_buffer = tf2_ros.Buffer()
         self.tf_listener = tf2_ros.TransformListener(self.tf_buffer, self)
+=======
+        # TODO: Create a buffer and listener
+        self.tf_buffer = None
+        self.tf_listener = None
+>>>>>>> 91e9905d51ec75d63956fe136b2e097e7a95d076
 
         self.target_frame = target_frame
         self.source_frame = source_frame
@@ -36,6 +45,7 @@ class TfEchoNode(Node):
         )
 
     def print_transform(self):
+<<<<<<< HEAD
         try: 
             t = self.tf_buffer.lookup_transform(self.target_frame, self.source_frame, rclpy.time.Time())
             rotation = t.transform.rotation
@@ -46,6 +56,10 @@ class TfEchoNode(Node):
             print("ConnectivityException")
         except ExtrapolationException:
             print("ExtrapolationException")
+=======
+        # YOUR CODE HERE
+        pass
+>>>>>>> 91e9905d51ec75d63956fe136b2e097e7a95d076
 
 
 def main(args=None):

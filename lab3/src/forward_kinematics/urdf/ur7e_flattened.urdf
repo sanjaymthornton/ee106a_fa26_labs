@@ -75,4 +75,8 @@ This simplification is used only for the forward kinematics exercise.
         <translation xyz="0.817 0.233 0.06285"/>
     </zero_configuration>
 
+<<<<<<< HEAD
 </robot>
+=======
+</robot>
+>>>>>>> 91e9905d51ec75d63956fe136b2e097e7a95d076

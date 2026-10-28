@@ -16,12 +16,16 @@ def generate_launch_description():
     # TODO: declare the 'rviz' launch argument for the RViz node below 
     # DeclareLaunchArgument takes a name, a default_value
     # (a string, even for a boolean) and a description.
+<<<<<<< HEAD
     rviz_arg = DeclareLaunchArgument(
         name='rviz',
         default_value='True',
         description='Launch Argument for rviz'
     )
     rviz_conf = LaunchConfiguration('rviz')
+=======
+    rviz_arg = None
+>>>>>>> 91e9905d51ec75d63956fe136b2e097e7a95d076
 
     cartographer = Node(
         package='cartographer_ros',
@@ -48,12 +52,21 @@ def generate_launch_description():
     # TODO: For the conditions, look around this file for a hint. 
     # For the argument, normally we use config. For this lab, our configs are somewhere in the lab.
     rviz = Node(
+<<<<<<< HEAD
         package='rviz2',
         executable='rviz2',
         name='rviz_node',
         arguments=['-d', os.path.join(cartographer_pkg, 'rviz', 'tb3_cartographer.rviz')],
         output='screen',
         condition=IfCondition(rviz_conf),
+=======
+        package='TODO',
+        executable='TODO',
+        name='TODO',
+        arguments=['-d', os.path.join(my_pkg, 'TODO', 'TODO')],
+        output='screen',
+        condition=TODO:
+>>>>>>> 91e9905d51ec75d63956fe136b2e097e7a95d076
     )
 
     return LaunchDescription([

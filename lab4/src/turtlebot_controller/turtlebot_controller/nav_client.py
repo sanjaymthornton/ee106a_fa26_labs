@@ -45,7 +45,11 @@ class NavClient(Node):
 
         # TODO 1: build the action client. which action type, and what is the
         # server called? (ros2 action list)
+<<<<<<< HEAD
         self.client = ActionClient(self, NavigateToPose, 'navigate_to_pose')
+=======
+        self.client = None
+>>>>>>> 91e9905d51ec75d63956fe136b2e097e7a95d076
 
     def spin_for(self, seconds):
         end = self.get_clock().now() + Duration(seconds=seconds)
@@ -79,7 +83,11 @@ class NavClient(Node):
         frame = f'ar_marker_{self.marker_id}'
         # TODO 2: look the tag up in self.goal_frame. one call -- tf composes the
         # whole chain from the map down to the marker for you.
+<<<<<<< HEAD
         tf = self.tf_buffer.lookup_transform(self.goal_frame, frame, Time())
+=======
+        tf = None
+>>>>>>> 91e9905d51ec75d63956fe136b2e097e7a95d076
 
         # tf2 keeps handing back the last transform it saw. refuse a stale one.
         age = (self.get_clock().now() - Time.from_msg(tf.header.stamp)).nanoseconds / 1e9
@@ -97,11 +105,15 @@ class NavClient(Node):
 
         # TODO 3: return (goal_x, goal_y, goal_yaw) self.standoff metres short of the
         # tag, facing it. 
+<<<<<<< HEAD
         dist_x = tag_x - robot_x
         dist_y = tag_y - robot_y
         dir_tag = math.sqrt(dist_x**2 + dist_y**2)
 
         return ((dist_x/dir_tag)*self.standoff, (dist_y/dir_tag)*self.standoff, math.atan2(dist_y, dist_x))
+=======
+        raise NotImplementedError
+>>>>>>> 91e9905d51ec75d63956fe136b2e097e7a95d076
 
     def make_goal(self):
         x = self.get_parameter('x').value
@@ -114,6 +126,7 @@ class NavClient(Node):
 
         # TODO 4: build and return the PoseStamped. it needs a frame_id, a stamp, a
         # position and an orientation. yaw_to_quat is given
+<<<<<<< HEAD
         yaw_quat = yaw_to_quaternion(yaw)
 
         msg = PoseStamped()
@@ -127,6 +140,9 @@ class NavClient(Node):
         msg.pose.orientation.z = yaw_quat[2]
         msg.pose.orientation.w = yaw_quat[3]
         return msg
+=======
+        raise NotImplementedError
+>>>>>>> 91e9905d51ec75d63956fe136b2e097e7a95d076
 
     def send(self):
         goal = self.make_goal()
@@ -141,10 +157,14 @@ class NavClient(Node):
         # TODO 5: build the goal message, send it with on_feedback as the feedback
         # callback, and hand the future it returns to on_goal_response. read
         # on_goal_response below first -- it does the same trick a second time.
+<<<<<<< HEAD
         msg = NavigateToPose.Goal()
         msg.pose = goal
         self.client.send_goal_async(msg, feedback_callback=self.on_feedback).add_done_callback(self.on_goal_response)
         return True
+=======
+        raise NotImplementedError
+>>>>>>> 91e9905d51ec75d63956fe136b2e097e7a95d076
 
     def on_goal_response(self, future):
         handle = future.result()
@@ -158,7 +178,11 @@ class NavClient(Node):
 
     def on_feedback(self, msg):
         # TODO 6: print how far Nav2 thinks it still has to go. 
+<<<<<<< HEAD
         self.get_logger().info(f"{msg.feedback.distance_remaining:.2f} left")
+=======
+        raise NotImplementedError
+>>>>>>> 91e9905d51ec75d63956fe136b2e097e7a95d076
 
     def on_result(self, future):
         status = future.result().status

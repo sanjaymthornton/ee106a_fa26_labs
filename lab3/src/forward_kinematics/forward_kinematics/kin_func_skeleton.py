@@ -8,7 +8,11 @@ Adapted for Fall 2020 by: Amay Saxena, 9/10/20
 Adapted for Fall 2026 by: Sebastian Vargas and Valmik Prabhu
 
 This Python file is a code skeleton for HW2. You should fill in
+<<<<<<< HEAD
 the body of the nine empty methods below so that they implement the kinematic
+=======
+the body of the eight empty methods below so that they implement the kinematic
+>>>>>>> 91e9905d51ec75d63956fe136b2e097e7a95d076
 functions described in the assignment.
 
 When you think you have the methods implemented correctly, you can test your
@@ -115,6 +119,7 @@ def R3_to_so3(omega):
     Returns:
     omega_hat - (3,3) ndarray: the corresponding skew symmetric matrix
     """
+<<<<<<< HEAD
     
     w1 = omega[0]
     w2 = omega[1]
@@ -122,6 +127,11 @@ def R3_to_so3(omega):
     return np.array([[0, -1 * w3, w2], 
                      [w3, 0, -1 * w1], 
                      [-1 * w2, w1, 0]])
+=======
+
+    # YOUR CODE HERE
+
+>>>>>>> 91e9905d51ec75d63956fe136b2e097e7a95d076
 
 def so3_to_R3(omega_hat):
     """
@@ -136,8 +146,14 @@ def so3_to_R3(omega_hat):
     """
     # Check that the input is skew-symmetric.
     assert np.allclose(omega_hat, -omega_hat.T)
+<<<<<<< HEAD
     omega = np.array([omega_hat[2][1], omega_hat[0][2], omega_hat[1][0]])
     return omega
+=======
+
+    # YOUR CODE HERE
+
+>>>>>>> 91e9905d51ec75d63956fe136b2e097e7a95d076
 
 def axis_angle_to_SO3(omega, theta):
     """
@@ -154,6 +170,7 @@ def axis_angle_to_SO3(omega, theta):
 
     """
 
+<<<<<<< HEAD
     omega_mag = np.linalg.norm(omega)
     if omega_mag < 1e-12:
         return np.eye(3)
@@ -164,6 +181,10 @@ def axis_angle_to_SO3(omega, theta):
     second_term = (omega_hat @ omega_hat / omega_mag**2) * (1 - np.cos(omega_mag * theta))
 
     return identity + first_term + second_term
+=======
+    # YOUR CODE HERE
+
+>>>>>>> 91e9905d51ec75d63956fe136b2e097e7a95d076
 
 def so3_to_SO3(omega_hat, theta=1):
     """
@@ -180,12 +201,17 @@ def so3_to_SO3(omega_hat, theta=1):
 
     """
 
+<<<<<<< HEAD
     omega = so3_to_R3(omega_hat)
     omega_mag = np.linalg.norm(omega)
     if omega_mag < 1e-12:
         return np.eye(3)
     omega = omega / omega_mag
     return axis_angle_to_SO3(omega, omega_mag * theta)
+=======
+    # YOUR CODE HERE
+
+>>>>>>> 91e9905d51ec75d63956fe136b2e097e7a95d076
 
 def twist_to_se3(xi, theta=1):
     """
@@ -201,6 +227,7 @@ def twist_to_se3(xi, theta=1):
     Note: xi need not be a unit twist! (ie it may have some displacement information embedded into it)
     """
 
+<<<<<<< HEAD
     v = np.array([xi[0], xi[1], xi[2]])
     omega = np.array([xi[3], xi[4], xi[5]])
     omega_hat = R3_to_so3(omega)
@@ -209,6 +236,11 @@ def twist_to_se3(xi, theta=1):
                                  [omega_hat[2][0], omega_hat[2][1], omega_hat[2][2], v[2]],
                                  [0, 0, 0, 0]])
     return omega_hat_with_v * theta
+=======
+    # YOUR CODE HERE
+
+
+>>>>>>> 91e9905d51ec75d63956fe136b2e097e7a95d076
 
 def se3_to_twist(xi_hat):
     """
@@ -221,12 +253,19 @@ def se3_to_twist(xi_hat):
     xi - (6,) ndarray: the 3D twist
     """
 
+<<<<<<< HEAD
     omega_hat = xi_hat[0:3, 0:3]
     v = xi_hat[0:3, 3]
     omega = so3_to_R3(omega_hat)
     return np.array([v[0], v[1], v[2], omega[0], omega[1], omega[2]])
 
 def twist_to_SE3(xi, theta=1):
+=======
+    # YOUR CODE HERE
+
+
+def twist_to_SE3(xi, theta = 1)
+>>>>>>> 91e9905d51ec75d63956fe136b2e097e7a95d076
     """
     Converts a 3D twist and optional angle to a 4x4 rigid body transformation in SE(3)
 
@@ -241,6 +280,7 @@ def twist_to_SE3(xi, theta=1):
 
     """
 
+<<<<<<< HEAD
     v = xi[0:3]
     v_theta = v * theta
     omega = xi[3:6]
@@ -263,6 +303,8 @@ def twist_to_SE3(xi, theta=1):
         third_row = np.array([R[2][0], R[2][1], R[2][2], total_term[2]])
         fourth_row = np.array([0, 0, 0, 1])
         return np.array([first_row, second_row, third_row, fourth_row])
+=======
+>>>>>>> 91e9905d51ec75d63956fe136b2e097e7a95d076
 
 def se3_to_SE3(xi_hat, theta=1):
     """
@@ -279,8 +321,13 @@ def se3_to_SE3(xi_hat, theta=1):
 
     """
 
+<<<<<<< HEAD
     xi = se3_to_twist(xi_hat)
     return twist_to_SE3(xi, theta)
+=======
+    # YOUR CODE HERE
+
+>>>>>>> 91e9905d51ec75d63956fe136b2e097e7a95d076
 
 def forward_kinematics(xi, theta):
     """
@@ -295,11 +342,16 @@ def forward_kinematics(xi, theta):
     g - (4,4) ndarray: the resulting homogeneous transformation matrix
     """
 
+<<<<<<< HEAD
     g = np.eye(4)
     for i in range(xi.shape[1]): # There are n twists
         twist = twist_to_SE3(xi[:, i], theta[i])
         g = np.matmul(g, twist)
     return g
+=======
+    # YOUR CODE HERE
+
+>>>>>>> 91e9905d51ec75d63956fe136b2e097e7a95d076
 
 # ------------------------- Other Helper Functions -----------------------------
 # ---- (These are completed for you and can be used in this assignment or for future problems) ------
@@ -322,6 +374,7 @@ def inverse_SO3(R):
 
 def SO3_to_axis_angle(R):
     """
+<<<<<<< HEAD
     Converts a rotation matrix to axis angle form.
 
     The returned angle is in [0, pi]. The identity has a zero axis. At pi,
@@ -332,13 +385,25 @@ def SO3_to_axis_angle(R):
     if theta < 1e-10:
         omega = np.zeros((3,))
     elif np.pi - theta < 1e-7:
+=======
+    Converts a rotation matrix to axis angle form
+    """
+
+    theta = np.arccos(np.clip((np.trace(R) - 1) / 2, -1.0, 1.0))
+    if np.isclose(theta, 0.0):
+        omega = np.zeros((3,))
+    elif np.isclose(theta, np.pi):
+>>>>>>> 91e9905d51ec75d63956fe136b2e097e7a95d076
         eigenvalues, eigenvectors = np.linalg.eig(R)
         index = np.argmin(np.abs(eigenvalues - 1.0))
         omega = np.real(eigenvectors[:, index])
         omega = unitify(omega)
+<<<<<<< HEAD
         largest = np.argmax(np.abs(omega))
         if omega[largest] < 0:
             omega = -omega
+=======
+>>>>>>> 91e9905d51ec75d63956fe136b2e097e7a95d076
     else:
         omega = np.array(
             [R[2, 1] - R[1, 2], R[0, 2] - R[2, 0], R[1, 0] - R[0, 1]]
@@ -493,6 +558,7 @@ if __name__ == "__main__":
                             [ 0.,  0.,  0.,  0.]])
     array_func_test(twist_to_se3, func_args, ret_desired)
 
+<<<<<<< HEAD
     # Test twist_to_SE3()
     arg1 = np.array([2.0, 1, 3, 5, 4, 2])
     arg2 = 0.658
@@ -503,6 +569,8 @@ if __name__ == "__main__":
                             [ 0.    ,  0.    ,  0.    ,  1.    ]])
     array_func_test(twist_to_SE3, func_args, ret_desired)
 
+=======
+>>>>>>> 91e9905d51ec75d63956fe136b2e097e7a95d076
     # Test se3_to_SE3()
     arg1 = np.array([[ 0., -2.,  4.,  2.],
                      [ 2., -0., -5.,  1.],
@@ -535,4 +603,8 @@ if __name__ == "__main__":
                             [ 0.    ,  0.    ,  0.    ,  1.    ]])
     array_func_test(forward_kinematics, func_args, ret_desired)
 
+<<<<<<< HEAD
     print('Done!')
+=======
+    print('Done!')
+>>>>>>> 91e9905d51ec75d63956fe136b2e097e7a95d076

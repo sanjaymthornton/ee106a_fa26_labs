@@ -75,12 +75,16 @@ def generate_launch_description():
         )}],
     )
 
+<<<<<<< HEAD
     ik_planner_node = Node(
         package="planning",
         executable="ik",
         name="ik_planner",
         output="screen"
     )
+=======
+    ik_planner_node = _______
+>>>>>>> 91e9905d51ec75d63956fe136b2e097e7a95d076
 
     # -------------------------
     # Global shutdown on any process exit
@@ -102,7 +106,10 @@ def generate_launch_description():
         planning_tf_node,
         moveit_launch,
         planning_scene_obstacles_node,
+<<<<<<< HEAD
         ik_planner_node,
+=======
+>>>>>>> 91e9905d51ec75d63956fe136b2e097e7a95d076
 
         # Global handler (keep at end)
         shutdown_on_any_exit,

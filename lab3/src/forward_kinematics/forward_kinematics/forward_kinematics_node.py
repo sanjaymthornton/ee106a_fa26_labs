@@ -8,7 +8,10 @@ import rclpy
 from ament_index_python.packages import get_package_share_directory
 from rclpy.node import Node
 from sensor_msgs.msg import JointState
+<<<<<<< HEAD
 from kin_func_skeleton import forward_kinematics
+=======
+>>>>>>> 91e9905d51ec75d63956fe136b2e097e7a95d076
 
 JOINT_NAMES = [
     "shoulder_pan_joint",
@@ -64,7 +67,14 @@ class ForwardKinematicsNode(Node):
 
         # R: (3, 3) ndarray
         R = np.array(
+<<<<<<< HEAD
             [np.fromstring(row.attrib["values"], sep=" ") for row in zero_config.find("rotation").findall("row")]
+=======
+            [
+                np.fromstring(row.attrib["values"], sep=" ")
+                for row in zero_config.find("rotation").findall("row")
+            ]
+>>>>>>> 91e9905d51ec75d63956fe136b2e097e7a95d076
         )
 
         # p: (3, 1) ndarray
@@ -74,6 +84,7 @@ class ForwardKinematicsNode(Node):
         )
 
         twists = []
+<<<<<<< HEAD
         gst0 = np.array([[R[0][0], R[0][1], R[0][2], p[0]],
                        [R[1][0], R[1][1], R[1][2], p[1]],
                        [R[2][0], R[2][1], R[2][2], p[2]],
@@ -85,6 +96,11 @@ class ForwardKinematicsNode(Node):
             twist = np.concatenate((v, w))
             twists.append(twist)
         twists = np.column_stack(twists)
+=======
+        gst0 = np.eye(4)
+
+        # YOUR CODE HERE
+>>>>>>> 91e9905d51ec75d63956fe136b2e097e7a95d076
 
         return twists, gst0
 
@@ -93,12 +109,17 @@ class ForwardKinematicsNode(Node):
         Compute g_st(theta) whenever a new JointState message arrives.
         """
 
+<<<<<<< HEAD
         positions = dict(zip(msg.name, msg.position))
         angles = np.array([])
         for i in range(len(JOINT_NAMES)):
             angles = np.append(angles, positions[JOINT_NAMES[i]])
         res = forward_kinematics(self.load_kinematics_description()[0], angles) @ self.load_kinematics_description()[1]
         print(res)
+=======
+        # YOUR CODE HERE
+
+>>>>>>> 91e9905d51ec75d63956fe136b2e097e7a95d076
 
 def main(args=None):
     rclpy.init(args=args)

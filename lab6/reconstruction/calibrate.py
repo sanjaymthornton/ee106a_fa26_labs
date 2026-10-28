@@ -19,8 +19,11 @@ import numpy as np
 
 from common import CALIBRATION_PATH
 
+<<<<<<< HEAD
 from pprint import pprint
 
+=======
+>>>>>>> 91e9905d51ec75d63956fe136b2e097e7a95d076
 OUT_DIR = os.path.dirname(CALIBRATION_PATH)
 SUBPIX_WINDOW = (11, 11)
 SUBPIX_CRITERIA = (cv2.TERM_CRITERIA_EPS + cv2.TERM_CRITERIA_MAX_ITER, 30, 1e-3)
@@ -31,6 +34,7 @@ def board_points(cols, rows, square):
     # (0,0,0), (square,0,0), ..., then (0,square,0), ...
     # TODO 1.1: build the grid. np.mgrid[0:cols, 0:rows] gives you every
     # (col, row) pair, you just need to get it into the right order.
+<<<<<<< HEAD
     pts = []
     for i in range(rows):
         for j in range(cols):
@@ -40,6 +44,10 @@ def board_points(cols, rows, square):
     print(len(pts))
     return pts
             
+=======
+    raise NotImplementedError('TODO 1.1')
+
+>>>>>>> 91e9905d51ec75d63956fe136b2e097e7a95d076
 
 def find_corners(gray, cols, rows):
     # returns the corners as a (cols*rows, 2) array, or None if the board isn't found
@@ -51,12 +59,16 @@ def find_corners(gray, cols, rows):
     # flags=flags. if it finds the board, refine with cv2.cornerSubPix using
     # SUBPIX_WINDOW, a zero zone of (-1, -1), and SUBPIX_CRITERIA.
     # the OpenCV calibration tutorial has an example of both.
+<<<<<<< HEAD
     retval, corners = cv2.findChessboardCorners(gray, (cols, rows), flags)
     if retval:
         corners = cv2.cornerSubPix(gray, corners, SUBPIX_WINDOW, (-1, -1), SUBPIX_CRITERIA)
     else: 
         return None
     return corners.reshape(-1, 2)
+=======
+    raise NotImplementedError('TODO 1.2')
+>>>>>>> 91e9905d51ec75d63956fe136b2e097e7a95d076
 
 
 def calibrate(object_points, image_points, image_size):
@@ -66,9 +78,14 @@ def calibrate(object_points, image_points, image_size):
     # should return rms, K, dist (flattened), rvecs, tvecs
     # TODO 1.3: cv2.calibrateCamera. pass None for the starting K and dist.
     # careful, it wants the image points shaped (N, 1, 2)
+<<<<<<< HEAD
     new_image_points = [i.reshape(-1, 1, 2) for i in image_points]
     rms, K, dist_flattened, rvecs, tvecs = cv2.calibrateCamera(object_points, new_image_points, image_size, None, None)
     return rms, K, dist_flattened, rvecs, tvecs
+=======
+    raise NotImplementedError('TODO 1.3')
+
+>>>>>>> 91e9905d51ec75d63956fe136b2e097e7a95d076
 
 # Everything below here just draws pictures of the result.
 

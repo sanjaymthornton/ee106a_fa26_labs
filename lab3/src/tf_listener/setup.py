@@ -28,8 +28,12 @@ setup(
         ],
     },
     entry_points={
+<<<<<<< HEAD
         "console_scripts": [
                 'tf_listener = tf_listener.tf_listener:main',
             ],
+=======
+        "console_scripts": [],
+>>>>>>> 91e9905d51ec75d63956fe136b2e097e7a95d076
     },
 )
