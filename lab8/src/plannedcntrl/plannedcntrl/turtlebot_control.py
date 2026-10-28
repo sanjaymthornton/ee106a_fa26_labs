@@ -88,11 +88,11 @@ class TurtleBotController(Node):
         # TODO: Find the controlled point. It sits self.offset_l in front of
         # the robot's center -- that offset is what makes the robot's motion
         # invertible, see the point offset derivation in the lab doc.
-        a, b = 0., 0.
+        a, b = x + self.offset_l * np.cos(theta), y + self.offset_l * np.sin(theta)
 
         # TODO: Error between where the reference should be and where the
         # controlled point actually is.
-        ex, ey = 0., 0.
+        ex, ey = np.abs(xd - a), np.abs(yd - b)
 
         if finished and math.hypot(ex, ey) < GOAL_TOL:
             self.trajectory = None
@@ -107,17 +107,20 @@ class TurtleBotController(Node):
         # TODO: Desired velocity of the controlled point: the trajectory's own
         # velocity (the feedforward terms) plus a proportional correction on
         # the error, with gains self.k1 and self.k2.
-        ux, uy = 0., 0.
+        ux, uy = xd_dot + self.k1 * (xd - a), yd_dot + self.k2 * (yd - b)
 
         # TODO: Map that back to the robot's inputs through the inverse of the
         # decoupling matrix. Watch the 1/l on the angular row.
+        vel = np.array([[np.cos(theta), np.sin(theta)], [(-1 / self.offset_l) * np.sin(theta), (1 / self.offset_l) * np.cos(theta)]]) @ np.array([ux, uy])
+        ux = vel[0]
+        uy = vel[1]
         control_cmd = Twist()
 
         control_cmd.linear.x = float(
-            np.clip(control_cmd.linear.x, -MAX_LINEAR, MAX_LINEAR)
+            np.clip(vel[0], -MAX_LINEAR, MAX_LINEAR)
         )
         control_cmd.angular.z = float(
-            np.clip(control_cmd.angular.z, -MAX_ANGULAR, MAX_ANGULAR)
+            np.clip(vel[1], -MAX_ANGULAR, MAX_ANGULAR)
         )
         self.pub.publish(control_cmd)
 

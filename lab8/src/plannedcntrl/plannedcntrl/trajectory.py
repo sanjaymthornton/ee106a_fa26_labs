@@ -86,9 +86,21 @@ def push_clear(closest, obstacle, obstacles, segment_dir,
     distance = np.linalg.norm(offset)
 
     if distance < 1e-9:
-        direction = ...
+        direction = np.array([[0, -1], [1, 0]]) @ segment_dir # Rotate by 90 degrees 
     else:
-        direction = ...
+        direction = offset / distance
+    new_point = safety * radius * direction + obstacle
+    for ob in obstacles:
+        offset = new_point - ob
+        distance = np.linalg.norm(offset)
+        if distance < safety * radius:
+            for i in range(MAX_PUSH_STEPS):
+                if np.linalg.norm(new_point - ob) >= safety * radius:
+                    break
+                new_point += step * direction
+        else:
+            continue
+    return new_point
 
     #TODO: If the distance is very small, the path segment passes through the center of the cone. 
     # Which direction should the new point go in this case? Otherwise, which 
