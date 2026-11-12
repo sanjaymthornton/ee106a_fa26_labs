@@ -3,7 +3,7 @@
 import numpy as np
 from scipy.linalg import logm
 
-from hw2.kin_func_skeleton import (
+from visual_servoing.kin_func_skeleton import (
     R3_to_so3,
     forward_kinematics,
     inverse_SE3,

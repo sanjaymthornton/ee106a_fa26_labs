@@ -64,7 +64,7 @@ class VisualServo(Node):
 
         #TODO tune these as needed
 
-        self.Kp = 0
+        self.Kp = 4
         self.Kd = 0 * self.nominal_dt
         self.Ki = 0 / self.nominal_dt
 
@@ -142,7 +142,7 @@ class VisualServo(Node):
     def find_error(self, gd, g):
         """Converts the configuration error from SE(3) to a 6x1 twist and returns it"""
         #TODO: Hint: look at the forward kinematics helper functions
-        return ...
+        return jfs.spatial_error_twist(jfs.spatial_configuration_error(g, gd))
     
     def send_velocity(self, joint_velocities):
         """Caps the joint speeds at 1 rad/s and publishes the joint speeds to /forward_velocity_controller/commands """
@@ -153,6 +153,7 @@ class VisualServo(Node):
         print(joint_velocities)
 
         vel_msg = Float64MultiArray()
+
         vel_msg.data = joint_velocities.tolist()
         self._velocity_pub.publish(vel_msg)
 
@@ -194,7 +195,7 @@ class VisualServo(Node):
         """Calculates the spatial jacobian based on the current joint state"""
         current_position, _ = self.get_joint_state()
         #TODO hint: look at the jacobian helper functions
-        return ...
+        return jfs.spatial_jacobian(self.twists, current_position)
     
     #Circle Stuff
 
@@ -226,13 +227,15 @@ class VisualServo(Node):
     def make_line(self):
         # LinearTrajectory starts at point p0. Place the target at the center_pose position
         #TODO
-
+        p0 = self.find_g('wrist_3_link')[:3, 3]
+        target = self.make_pose()[:3, 3]
         return LinearTrajectory(p0, target, self.args.total_time)
 
     def make_circle(self):
         # CircularTrajectory starts at center + [r, 0, 0], where the center is the center_pose
         #TODO
-
+        center = self.make_pose()[:3, 3]
+        r = self.args.circle_radius
         return CircularTrajectory(center, r, self.args.total_time)
 
     def control_step(self, goal_pose, Vff, eta, nu, dt):
@@ -329,7 +332,9 @@ class VisualServo(Node):
         current_pose = self.find_g('wrist_3_link')
 
         #TODO: Implement the workspace controller
-
+        eta = self.find_error(goal_pose, current_pose)
+        Vs = Vff + (self.Kp * eta) + (self.Kd * (eta - eta_prev) / dt) + (self.Ki * nu)
+        nu = self.alpha * nu + eta * dt
 
         return Vs, eta, nu
 
