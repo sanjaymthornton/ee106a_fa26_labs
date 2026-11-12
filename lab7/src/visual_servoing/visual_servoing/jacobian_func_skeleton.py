@@ -1,8 +1,15 @@
 """Functions to help with Jacobian calculations."""
 
 import numpy as np
+from scipy.linalg import logm
 
-import kin_func_skeleton #keep this because the lab repo doesn't know about hw2
+from hw2.kin_func_skeleton import (
+    R3_to_so3,
+    forward_kinematics,
+    inverse_SE3,
+    se3_to_twist,
+    twist_to_SE3,
+)
 
 
 def adjoint(g):
@@ -15,9 +22,13 @@ def adjoint(g):
     Returns:
         NumPy array with shape ``(6, 6)`` representing ``Ad_g``.
     """
-
-    # TODO
-    return ...
+    R = g[:3, :3]
+    p = g[:3, 3]
+    adj = np.eye(6)
+    adj[:3, :3] = R
+    adj[:3, 3:6] = R3_to_so3(p) @ R
+    adj[3:6, 3:6] = R
+    return adj
 
 
 def adjoint_inv(g):
@@ -31,8 +42,15 @@ def adjoint_inv(g):
         NumPy array with shape ``(6, 6)`` representing ``Ad_g^{-1}``.
     """
 
-    # TODO
-    return ...
+    R = g[:3, :3]
+    p = g[:3, 3]
+    R_T = R.T
+    p_hat = R3_to_so3(p)
+    adj = np.eye(6)
+    adj[:3, :3] = R_T
+    adj[:3, 3:6] = -R_T @ p_hat
+    adj[3:6, 3:6] = R_T
+    return adj
 
 
 def spatial_jacobian(twists, theta):
@@ -47,10 +65,13 @@ def spatial_jacobian(twists, theta):
         NumPy array with shape ``(6, N)`` containing the spatial Jacobian at
         ``theta``.
     """
-
-    # TODO
-    return ...
-
+    N = twists.shape[1]
+    jacobian = np.zeros((6, N))
+    T = np.eye(4)
+    for i in range(N):
+        jacobian[:, i] = adjoint(T) @ twists[:, i]
+        T = T @ twist_to_SE3(twists[:, i] * theta[i])
+    return jacobian
 
 def body_jacobian(twists, theta, g_st0):
     """Calculate the body manipulator Jacobian.
@@ -66,10 +87,16 @@ def body_jacobian(twists, theta, g_st0):
         NumPy array with shape ``(6, N)`` containing the body Jacobian at
         ``theta``.
     """
-
-    # TODO
-    return ...
-
+    N = twists.shape[1]
+    jacobian = np.zeros((6, N))
+    for i in range(N):
+        to_adj = np.eye(4)
+        for j in range(i + 1, N):
+            to_adj = to_adj @ twist_to_SE3(twists[:, j] * theta[j])
+        to_adj = to_adj @ g_st0
+        to_adj = adjoint(inverse_SE3(to_adj))
+        jacobian[:, i] = to_adj @ twists[:, i]
+    return jacobian
 
 def spatial_velocity(twists, theta, theta_dot):
     """Calculate the spatial end-effector velocity.
@@ -84,10 +111,7 @@ def spatial_velocity(twists, theta, theta_dot):
     Returns:
         NumPy array with shape ``(6,)`` containing the spatial velocity.
     """
-
-    # TODO
-    return ...
-
+    return spatial_jacobian(twists, theta) @ theta_dot
 
 def body_velocity(twists, theta, theta_dot, g_st0):
     """Calculate the body end-effector velocity.
@@ -104,74 +128,70 @@ def body_velocity(twists, theta, theta_dot, g_st0):
     Returns:
         NumPy array with shape ``(6,)`` containing the body velocity.
     """
+    return body_jacobian(twists, theta, g_st0) @ theta_dot
 
-    # TODO
-    return ...
+def spatial_configuration_error(pose, desired_pose):
+    """Calculate the spatial-frame transformation error.
 
+    Args:
+        pose: NumPy array with shape ``(4, 4)`` for the current SE(3) pose.
+        desired_pose: NumPy array with shape ``(4, 4)`` for the desired
+            SE(3) pose, expressed in the same reference frame.
 
+    Returns:
+        NumPy array with shape ``(4, 4)`` containing our error.
+    """
+    return desired_pose @ inverse_SE3(pose)
 
+def spatial_error_twist(error):
+    """Convert a transformation error into an exponential-coordinate vector.
 
+    Args:
+        error: NumPy array with shape ``(4, 4)`` in SE(3), returned by
+            ``spatial_configuration_error``. Assume its rotation angle is less than pi.
 
-def jacobian_ik_step(
+    Returns:
+        NumPy array with shape ``(6,)`` containing ``log(error)^vee``.
 
-    theta, velocity, step_size=0.2, twists=PANDA_TWISTS, g_st0=PANDA_G_ST0,
+    Use ``scipy.linalg.logm`` for the matrix logarithm.
+    """
+    log_error = logm(error)
+    return se3_to_twist(log_error)
 
+def jacobian_inverse_kinematics(
+    twists, theta, g_st0, desired_pose, step_size=0.2,
+    max_iterations=200, tolerance=1e-6,
 ):
+    """Solve inverse kinematics using spatial errors and forward-Euler updates.
 
-    """Apply one forward-Euler Jacobian IK update for the supplied robot."""
+    Args:
+        twists: NumPy array with shape ``(6, N)`` containing the joint twists
+            at the home configuration.
+        theta: NumPy array with shape ``(N,)`` containing the initial joint values.
+        g_st0: NumPy array with shape ``(4, 4)`` containing the home tool pose.
+        desired_pose: NumPy array with shape ``(4, 4)`` containing the target
+            tool pose in the same reference frame.
+        step_size: Nonnegative scalar multiplier for each joint update.
+        max_iterations: Nonnegative integer limiting the number of updates.
+        tolerance: Positive scalar threshold for the norm of the spatial
+            error twist. Assume relative rotation angles are less than pi.
 
-    jacobian = body_jacobian(twists, theta, g_st0)
-
-    return theta + step_size * np.linalg.pinv(jacobian) @ velocity
-
-
-
-
-
-def null_space_ik_step(
-
-    theta,
-
-    velocity,
-
-    secondary_gradient,
-
-    step_size=0.2,
-
-    secondary_gain=0.05,
-
-):
-
-    """Apply one Panda IK update with a projected secondary objective."""
-
-    jacobian = body_jacobian(PANDA_TWISTS, theta, PANDA_G_ST0)
-
-    pseudoinverse = np.linalg.pinv(jacobian)
-
-    primary = pseudoinverse @ velocity
-
-    null_motion = (
-
-        np.eye(7) - pseudoinverse @ jacobian
-
-    ) @ secondary_gradient
-
-    return theta + step_size * (
-
-        primary + secondary_gain * null_motion
-
-    )
-
-
-
-
-
-def joint_limit_gradient(theta):
-
-    """Compute the Panda joint-limit avoidance direction."""
-
-    midpoint = (PANDA_THETA_MIN + PANDA_THETA_MAX) / 2
-
-    half_range = (PANDA_THETA_MAX - PANDA_THETA_MIN) / 2
-
-    return -(theta - midpoint) / half_range**2
+    Returns:
+        ``(theta, history)``, where theta is a NumPy array with shape ``(N,)``
+        and history has shape ``(M, N)``. Include the initial joint values
+        and every update, so ``1 <= M <= max_iterations + 1`` and
+        ``theta == history[-1]``. Return the latest values even if the target
+        is not reached.
+    """
+    history = []
+    angles = theta
+    history.append(angles)
+    for i in range(max_iterations):
+        curr_pose = forward_kinematics(twists, angles) @ g_st0
+        error = spatial_configuration_error(curr_pose, desired_pose)
+        s_twist_err = spatial_error_twist(error)
+        if np.linalg.norm(s_twist_err) <= tolerance:
+            break
+        angles = angles + step_size * (np.linalg.pinv(spatial_jacobian(twists, angles)) @ s_twist_err)
+        history.append(angles)
+    return np.array(history[-1]), np.array(history)
