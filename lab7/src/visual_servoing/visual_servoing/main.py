@@ -221,8 +221,12 @@ class VisualServo(Node):
 
     def make_pose(self):
         """Creates the goal pose for a point"""
-        pose = self.find_g('center_pose')
-        return pose
+        while rclpy.ok():
+            rclpy.spin_once(self, timeout_sec=0.1)
+            try:
+                return self.find_g('center_pose')
+            except Exception:
+                self.get_logger().info("Waiting for center pose", throttle_duration_sec=1.0)
 
     def make_line(self):
         # LinearTrajectory starts at point p0. Place the target at the center_pose position
@@ -345,25 +349,25 @@ class VisualServo(Node):
         
         eta = np.zeros(6)
         nu = np.zeros(6)
-        time = 0
         switch_controllers(self.controller_type)
+        prev_time = self.get_clock().now()
 
         while rclpy.ok():
 
             if self.lookup_ar_tag(self.ar_marker):
                 #TODO: Use the workspace controller you already made for visual servoing
             
-                goal_pose = ...
-                Vff = ...
+                goal_pose = self.find_g('goal_pose')
+                Vff = np.zeros(6)
 
-                time_prev = ...
-                time = ...
-                dt = ...
+                curr_time = self.get_clock().now()
+                dt = (curr_time - prev_time).nanoseconds * 1e-9
+                prev_time = curr_time
 
-                Vs, eta, nu = ...
+                Vs, eta, nu = self.workspace_controller(goal_pose, Vff, eta, nu, dt)
 
                 if self.current_joint_state is not None:
-                    joint_speeds = ...
+                    joint_speeds = np.linalg.pinv(self.get_spatial_jacobian()) @ Vs
                 else:
                     self.get_logger().info("Joint states not found")
                 
@@ -457,3 +461,4 @@ def main(args=None):
 
 if __name__ == '__main__':
     main()
+    
