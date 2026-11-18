@@ -64,9 +64,9 @@ class VisualServo(Node):
 
         #TODO tune these as needed
 
-        self.Kp = 4
-        self.Kd = 0 * self.nominal_dt
-        self.Ki = 0 / self.nominal_dt
+        self.Kp = 3.2
+        self.Kd = 0.0 * self.nominal_dt
+        self.Ki = 0.0 / self.nominal_dt
 
         self.alpha = 0.8
 
